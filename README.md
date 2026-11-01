@@ -19,7 +19,10 @@
 
 ## Warum Randnotiz?
 
-<img src="docs/images/notiz.png" alt="Eine Notiz in Randnotiz: Foto als Polaroid mit Washi-Tape, darunter Datum, Ort und Wetter und liniertes Papier zum Schreiben" width="270" align="right">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/notiz-dark.png">
+  <img src="docs/images/notiz-light.png" alt="Gezeichnete Beispiel-Notiz: ein Polaroid von einer dampfenden Nudelschüssel in Chongqing mit Washi-Tape, daneben liniertes Papier mit Datum, Ort und Wetter, ein paar handgeschriebenen Zeilen und Stimmungen" width="100%">
+</picture>
 
 Auf meinem Handy liegen tausende Fotos – aber die meisten erzählen nur die halbe
 Geschichte. Wer war dabei? Worüber haben wir gelacht? Wie hat sich der Tag angefühlt?
