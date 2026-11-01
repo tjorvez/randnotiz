@@ -259,7 +259,7 @@ void main() {
     expect(find.text(journalText), findsOneWidget);
   });
 
-  testWidgets('"Sicherung einrichten" opens backup, back leads to library', (
+  testWidgets('"Sicherung einrichten" opens backup, back leads to journal', (
     tester,
   ) async {
     final prefs = await start(tester);

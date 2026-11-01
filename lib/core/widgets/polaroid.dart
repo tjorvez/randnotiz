@@ -102,7 +102,6 @@ class Polaroid extends StatelessWidget {
                 image: heroData.flightImage ?? image,
                 title: title,
                 tilt: tilt,
-                frame: 1,
                 tape: tape ? 1 : 0,
               ),
               child: Hero(
@@ -114,30 +113,6 @@ class Polaroid extends StatelessWidget {
             ),
     );
   }
-}
-
-/// A photo tile without a frame (e.g. in the library grid) that flies into
-/// a polaroid of the same note: the frame grows around it during the flight.
-class FramelessPolaroidHero extends StatelessWidget {
-  const FramelessPolaroidHero({
-    super.key,
-    required this.tag,
-    required this.image,
-  });
-
-  final Object tag;
-  final Widget image;
-
-  @override
-  Widget build(BuildContext context) => _PolaroidHeroScope(
-    data: _PolaroidHeroData(image: image, tilt: 0, frame: 0, tape: 0),
-    child: Hero(
-      tag: tag,
-      createRectTween: _linearRect,
-      flightShuttleBuilder: _polaroidShuttle,
-      child: ClipRect(child: image),
-    ),
-  );
 }
 
 /// Shared-element settings of a [Polaroid].
@@ -153,16 +128,14 @@ class PolaroidHero {
   final Widget? flightImage;
 }
 
-/// The unrotated card plus tilt and tape. [frame] (0…1) scales the white
-/// frame (0 = bare photo, used while a frameless tile turns into a
-/// polaroid); [tape] (0…1) is the tape's opacity.
+/// The unrotated card plus tilt and tape. [tape] (0…1) is the tape's
+/// opacity.
 class PolaroidFrame extends StatelessWidget {
   const PolaroidFrame({
     super.key,
     required this.image,
     this.rim,
     this.tilt = 0,
-    this.frame = 1,
     this.tape = 1,
     this.rimOpacity = 1,
   });
@@ -170,7 +143,6 @@ class PolaroidFrame extends StatelessWidget {
   final Widget image;
   final Widget? rim;
   final double tilt;
-  final double frame;
   final double tape;
   final double rimOpacity;
 
@@ -180,33 +152,25 @@ class PolaroidFrame extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final w = constraints.maxWidth;
-        final side = w * PolaroidGeometry.side * frame;
-        final rimHeight = PolaroidGeometry.rimHeight(w) * frame;
+        final side = w * PolaroidGeometry.side;
+        final rimHeight = PolaroidGeometry.rimHeight(w);
         final card = DecoratedBox(
           decoration: BoxDecoration(
-            color: diary.polaroidFrame.withValues(
-              alpha: diary.polaroidFrame.a * frame.clamp(0, 1),
-            ),
+            color: diary.polaroidFrame,
             borderRadius: BorderRadius.circular(2),
-            boxShadow: frame <= 0
-                ? null
-                : [
-                    BoxShadow(
-                      color: diary.polaroidShadow.withValues(
-                        alpha: diary.polaroidShadow.a * frame,
-                      ),
-                      blurRadius: 14,
-                      spreadRadius: -2,
-                      offset: const Offset(0, 6),
-                    ),
-                    BoxShadow(
-                      color: diary.polaroidShadow.withValues(
-                        alpha: 0.12 * frame,
-                      ),
-                      blurRadius: 2,
-                      offset: const Offset(0, 1),
-                    ),
-                  ],
+            boxShadow: [
+              BoxShadow(
+                color: diary.polaroidShadow,
+                blurRadius: 14,
+                spreadRadius: -2,
+                offset: const Offset(0, 6),
+              ),
+              BoxShadow(
+                color: diary.polaroidShadow.withValues(alpha: 0.12),
+                blurRadius: 2,
+                offset: const Offset(0, 1),
+              ),
+            ],
           ),
           child: Padding(
             padding: EdgeInsets.fromLTRB(side, side, side, 0),
@@ -381,7 +345,6 @@ class _PolaroidHeroData {
   const _PolaroidHeroData({
     required this.image,
     required this.tilt,
-    required this.frame,
     required this.tape,
     this.title,
   });
@@ -389,7 +352,6 @@ class _PolaroidHeroData {
   final Widget image;
   final String? title;
   final double tilt;
-  final double frame;
   final double tape;
 }
 
@@ -476,7 +438,6 @@ class _PolaroidFlight extends AnimatedWidget {
         t,
       )!,
       tilt: lerpDouble(list.tilt, page.tilt, t)!,
-      frame: lerpDouble(list.frame, page.frame, t)!,
       tape: lerpDouble(list.tape, page.tape, t)!,
     );
   }

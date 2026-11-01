@@ -16,7 +16,7 @@ import '../../dictation/presentation/dictation_controller.dart';
 import '../../dictation/presentation/mic_button.dart';
 import '../../music/domain/music_service.dart';
 import '../../music/presentation/music_providers.dart';
-import '../../music/presentation/song_record.dart';
+import '../../music/presentation/record_on_polaroid.dart';
 import '../../music/presentation/song_sheet.dart';
 import '../../tags/presentation/tag_picker_sheet.dart';
 import '../../weather/presentation/weather_ui.dart';
@@ -358,7 +358,8 @@ class _PhotoPanel extends StatelessWidget {
     final maxWidth = wide
         ? size.width * 0.4
         : hasSong
-        ? (size.width - 48) / (1 + _WithRecord.sizeFactor * _WithRecord.outside)
+        ? (size.width - 48) /
+              (1 + RecordOnPolaroid.sizeFactor * RecordOnPolaroid.outside)
         : size.width - 84;
     final width = maxWidth / cardAspect > maxHeight
         ? maxHeight * cardAspect
@@ -370,7 +371,7 @@ class _PhotoPanel extends StatelessWidget {
       child: Column(
         children: [
           Center(
-            child: _WithRecord(
+            child: RecordOnPolaroid(
               assetId: assetId,
               polaroidWidth: width,
               child: SizedBox(
@@ -459,78 +460,6 @@ class _NoteMenu extends ConsumerWidget {
         if (hasSong)
           item('removeSong', Icons.music_off_outlined, l10n.songRemove),
         if (exists) item('delete', Icons.delete_outline, l10n.editorDelete),
-      ],
-    );
-  }
-}
-
-/// The song's record, lying on the lower right corner of the polaroid –
-/// fully visible, so the cover on its label can be seen. It fades in once
-/// the page has opened, so it does not get in the way of the polaroid's
-/// flight.
-class _WithRecord extends ConsumerWidget {
-  const _WithRecord({
-    required this.assetId,
-    required this.polaroidWidth,
-    required this.child,
-  });
-
-  /// Diameter of the record relative to the polaroid's width.
-  static const sizeFactor = 0.42;
-
-  /// Part of the record that sticks out beyond the polaroid's right edge.
-  static const outside = 0.62;
-
-  final String assetId;
-  final double polaroidWidth;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final hasSong = ref.watch(
-      noteEditorProvider(assetId).select((s) => s.song != null),
-    );
-    final size = (polaroidWidth * sizeFactor).clamp(84.0, 176.0);
-    final route = ModalRoute.of(context)?.animation;
-    final record = DecoratedBox(
-      decoration: const BoxDecoration(
-        shape: BoxShape.circle,
-        boxShadow: [
-          BoxShadow(
-            color: Color(0x59000000),
-            blurRadius: 10,
-            offset: Offset(2, 4),
-          ),
-        ],
-      ),
-      child: SongRecord(assetId: assetId, size: size),
-    );
-    // The record must lie inside the Stack's box to receive taps (hit tests
-    // stop at a box's edge), so the box grows on the right by the part that
-    // sticks out. The same structure with and without a song, so the
-    // polaroid (and its title field) is never rebuilt from scratch.
-    return Stack(
-      children: [
-        Padding(
-          key: const ValueKey('polaroid'),
-          padding: EdgeInsets.only(right: hasSong ? size * outside : 0),
-          child: child,
-        ),
-        // Above the polaroid: lying on its corner, over the rim's end.
-        if (hasSong)
-          Positioned(
-            right: 0,
-            bottom: polaroidWidth * 0.03,
-            child: route == null
-                ? record
-                : FadeTransition(
-                    opacity: CurvedAnimation(
-                      parent: route,
-                      curve: const Interval(0.7, 1, curve: Curves.easeOut),
-                    ),
-                    child: record,
-                  ),
-          ),
       ],
     );
   }

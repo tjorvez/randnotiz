@@ -210,65 +210,6 @@ void main() {
     }
   }
 
-  testWidgets('a frameless tile grows its frame on the way', (t) async {
-    final nav = GlobalKey<NavigatorState>();
-    await t.pumpWidget(
-      MaterialApp(
-        navigatorKey: nav,
-        theme: AppTheme.build(Brightness.light, Season.autumn),
-        home: const Scaffold(
-          body: Align(
-            alignment: Alignment.topLeft,
-            child: SizedBox.square(
-              dimension: 120,
-              child: FramelessPolaroidHero(
-                tag: tag,
-                image: ColoredBox(key: listImage, color: Colors.teal),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-    final start = corners(t, find.byKey(listImage));
-    unawaited(
-      nav.currentState!.push(
-        NotePage<void>(
-          child: Scaffold(
-            body: Center(
-              child: polaroid(
-                width: pageWidth,
-                imageKey: pageImage,
-                tape: true,
-              ),
-            ),
-          ),
-        ).createRoute(nav.currentContext!),
-      ),
-    );
-    await t.pump();
-    await t.pump();
-    expect(
-      maxDistance(start, corners(t, find.byKey(listImage))),
-      lessThan(1.5),
-    );
-    final frames = <double>[];
-    while (find.byKey(listImage).evaluate().isNotEmpty &&
-        find.byKey(pageImage).hitTestable().evaluate().isEmpty) {
-      final card = cardOf(t, find.byKey(listImage));
-      final inset = corners(t, find.byKey(listImage), within: card)[0].dx;
-      frames.add(inset / card.size.width);
-      await t.pump(const Duration(milliseconds: 16));
-    }
-    await t.pumpAndSettle();
-    // The frame grows from nothing to a polaroid's frame, never shrinking.
-    expect(frames.first, lessThan(0.01));
-    expect(frames.last, closeTo(PolaroidGeometry.side, 0.01));
-    for (var i = 1; i < frames.length; i++) {
-      expect(frames[i], greaterThanOrEqualTo(frames[i - 1] - 1e-6));
-    }
-  });
-
   testWidgets('"reduce motion": nothing flies, the page only fades', (t) async {
     final nav = GlobalKey<NavigatorState>();
     await t.pumpWidget(
