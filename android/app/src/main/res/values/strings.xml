@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Native texts (launcher, widget). The Flutter UI texts live in lib/l10n/app_de.arb. -->
+<resources>
+    <string name="app_name">Randnotiz</string>
+    <string name="widget_name">Erinnerung des Tages</string>
+    <string name="widget_description">Ein Foto aus deinem Tagebuch, das heute Jahrestag hat.</string>
+    <string name="widget_title">Erinnerung des Tages</string>
+    <string name="widget_empty">Heute noch keine Erinnerung – öffne Randnotiz.</string>
+    <string name="widget_photo_description">Foto der Erinnerung</string>
+</resources>

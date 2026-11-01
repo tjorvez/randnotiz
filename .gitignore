@@ -1,0 +1,76 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Widget Preview related
+.widget_preview/
+
+# --- Randnotiz: never commit secrets, signing material or private images ---
+*.jks
+*.keystore
+*.p12
+*.pem
+key.properties
+**/key.properties
+local.properties
+**/local.properties
+google-services.json
+client_secret*.json
+*.env
+.env*
+# Screenshots taken during device testing may show private photos
+screenshots/
+shots/
+*.screenshot.png
+shot*.png
+spotify.local.json
+google.local.json
+
+# Spotify App Remote SDK (Spotify licence, download separately – see README)
+android/app/libs/*.aar
+
+# Interne Projektnotizen (Entscheidungen, Veröffentlichungs-Checkliste) – nur lokal
+DECISIONS.md
+PUBLISHING.md

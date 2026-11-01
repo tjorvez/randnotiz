@@ -1,0 +1,16 @@
+-- Full-text index over note text, tag (Stimmung) names, place, title and
+-- country (schema v2; "place" added in v4, "title" in v6, "country" in v7,
+-- "song" – title and artist of the linked song – in v8).
+-- "place" holds the German and the English name of the place, "country" the
+-- German and English country name.
+-- rowid = notes.id. Maintained by SearchIndex (search_index.dart).
+-- unicode61 + remove_diacritics: case- and umlaut-insensitive ("Mädchen" ~ "madchen").
+CREATE VIRTUAL TABLE notes_fts USING fts5(
+  body,
+  tags,
+  place,
+  title,
+  country,
+  song,
+  tokenize = 'unicode61 remove_diacritics 2'
+);

@@ -1,0 +1,588 @@
+{
+  "@@locale": "de",
+  "appTitle": "Randnotiz",
+  "navLibrary": "Bibliothek",
+  "navJournal": "Tagebuch",
+  "navMemories": "Erinnerungen",
+  "settingsTooltip": "Einstellungen",
+  "cancel": "Abbrechen",
+  "delete": "Löschen",
+  "save": "Speichern",
+  "create": "Anlegen",
+  "done": "Fertig",
+  "ok": "OK",
+  "openSystemSettings": "Einstellungen öffnen",
+  "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal.",
+  "libraryPermissionTitle": "Deine Fotos, dein Tagebuch",
+  "libraryPermissionBody": "Randnotiz zeigt die Fotos deiner Galerie, damit du zu jedem eine Notiz schreiben kannst. Die Fotos bleiben auf deinem Gerät und werden nirgendwohin hochgeladen.",
+  "libraryPermissionButton": "Zugriff erlauben",
+  "libraryPermissionDeniedBody": "Ohne Zugriff auf deine Fotos kann Randnotiz nichts anzeigen. Du kannst ihn jederzeit in den Einstellungen deines Handys erlauben.",
+  "libraryLimitedBanner": "Randnotiz sieht nur die Fotos, die du ausgewählt hast.",
+  "libraryLimitedPickMore": "Auswahl ändern",
+  "libraryLimitedAllowAll": "Alle erlauben",
+  "libraryEmpty": "In deiner Galerie sind noch keine Fotos.",
+  "libraryHasNote": "Hat eine Notiz",
+  "libraryPhotoOf": "Foto vom {date}",
+  "@libraryPhotoOf": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "editorTitleNew": "Neue Notiz",
+  "editorTitleEdit": "Notiz",
+  "editorHint": "Was war da los? Schreib es auf …",
+  "editorSaveFailed": "Nicht gespeichert – neuer Versuch …",
+  "editorCleared": "Notiz geleert – sie wird beim Schließen gelöscht.",
+  "editorUndoClear": "Rückgängig",
+  "editorSaved": "Gespeichert",
+  "editorSaving": "Speichert …",
+  "editorDelete": "Notiz löschen",
+  "editorDeleteConfirmTitle": "Notiz löschen?",
+  "editorDeleteConfirmBody": "Text, Tags und Wetter dieser Notiz werden entfernt. Das Foto in deiner Galerie bleibt unberührt.",
+  "editorPhotoMissing": "Das Originalfoto ist nicht mehr in der Galerie. Die gespeicherte Kopie bleibt im Tagebuch.",
+  "editorDateTooltip": "Datum ändern",
+  "editorEmptyDiscarded": "Leere Notizen werden nicht gespeichert.",
+  "weatherKind": "{kind, select, clear{Sonnig} partlyCloudy{Heiter bis wolkig} cloudy{Bewölkt} fog{Nebel} drizzle{Nieselregen} rain{Regen} snow{Schnee} thunderstorm{Gewitter} other{Wetter}}",
+  "@weatherKind": {
+    "description": "Short weather description",
+    "placeholders": {
+      "kind": {
+        "type": "String"
+      }
+    }
+  },
+  "weatherTemperature": "{temperature} °C",
+  "@weatherTemperature": {
+    "placeholders": {
+      "temperature": {
+        "type": "String"
+      }
+    }
+  },
+  "weatherLoading": "Wetter wird gesucht …",
+  "weatherAdd": "Wetter",
+  "weatherFetchAgain": "Erneut abrufen",
+  "weatherOffline": "Das Wetter konnte nicht abgerufen werden. Vielleicht fehlt gerade die Internetverbindung.",
+  "weatherTemperatureLabel": "Temperatur in °C (optional)",
+  "weatherRemove": "Wetter entfernen",
+  "tagsAdd": "Stimmung",
+  "tagsSheetTitle": "Stimmungen",
+  "tagsCreateNew": "Stimmung neu anlegen",
+  "tagNameLabel": "Name der Stimmung",
+  "tagNameHint": "z. B. Glücklich",
+  "tagDuplicate": "Diese Stimmung gibt es schon.",
+  "tagNameEmpty": "Bitte gib einen Namen ein.",
+  "tagsNone": "Noch keine Stimmungen. Leg deine erste an.",
+  "tagRemove": "Stimmung {name} entfernen",
+  "@tagRemove": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "micStart": "Diktieren",
+  "micStop": "Diktat beenden",
+  "micListening": "Ich höre zu …",
+  "micUnavailableTooltip": "Diktat nicht verfügbar",
+  "micRationaleTitle": "Notizen per Sprache",
+  "micRationaleBody": "Damit du deine Notiz diktieren kannst, braucht Randnotiz Zugriff auf das Mikrofon. Es wird nichts aufgenommen oder gespeichert – nur der erkannte Text landet in deiner Notiz. Je nach Gerät erkennt dein Handy die Sprache selbst oder nutzt den Spracherkennungsdienst von Google.",
+  "micRationaleContinue": "Weiter",
+  "micDenied": "Ohne Mikrofon-Zugriff ist kein Diktat möglich. Du kannst natürlich weiter tippen.",
+  "micPermanentlyDeniedTitle": "Mikrofon ist gesperrt",
+  "micPermanentlyDeniedBody": "Du hast den Mikrofon-Zugriff abgelehnt. Wenn du diktieren möchtest, erlaube ihn in den App-Einstellungen.",
+  "micUnavailable": "Auf diesem Gerät ist keine Spracherkennung verfügbar. Aktiviere z. B. „Speech Services by Google“ in den Systemeinstellungen.",
+  "dictationNoSpeech": "Ich habe nichts verstanden. Tippe noch einmal aufs Mikrofon.",
+  "dictationNetwork": "Die Spracherkennung braucht gerade eine Internetverbindung.",
+  "dictationBusy": "Die Spracherkennung ist gerade beschäftigt. Versuch es gleich noch einmal.",
+  "dictationLanguage": "Deutsch wird von der Spracherkennung dieses Geräts nicht unterstützt.",
+  "dictationAudio": "Das Mikrofon ist gerade belegt, zum Beispiel durch einen Anruf. Dein Text ist erhalten.",
+  "dictationUnknown": "Das Diktat wurde unterbrochen. Dein Text ist erhalten.",
+  "journalSearchHint": "Notizen durchsuchen",
+  "journalEmptyTitle": "Dein Tagebuch ist noch leer",
+  "journalEmptyBody": "Tippe in der Bibliothek auf ein Foto und schreib deine erste Randnotiz.",
+  "journalNoResults": "Dazu habe ich nichts gefunden.",
+  "journalResultCount": "{count, plural, =1{1 Notiz} other{{count} Notizen}}",
+  "@journalResultCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journalClearFilter": "Filter zurücksetzen",
+  "journalClearSearch": "Suche leeren",
+  "yearsAgo": "{count, plural, =1{Vor 1 Jahr} other{Vor {count} Jahren}}",
+  "@yearsAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monthsAgo": "{count, plural, =1{Vor 1 Monat} other{Vor {count} Monaten}}",
+  "@monthsAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeksAgo": "{count, plural, =1{Vor 1 Woche} other{Vor {count} Wochen}}",
+  "@weeksAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysAgo": "{count, plural, =0{Heute} =1{Gestern} other{Vor {count} Tagen}}",
+  "@daysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoriesEmptyTitle": "Noch keine Erinnerungen",
+  "memoriesEmptyBody": "Sobald du Notizen schreibst, tauchen sie hier an ihren Jahrestagen wieder auf.",
+  "lockTitle": "Randnotiz ist gesperrt",
+  "lockBody": "Entsperre mit Fingerabdruck, Gesicht oder deiner Displaysperre.",
+  "lockButton": "Entsperren",
+  "lockReason": "Randnotiz entsperren",
+  "lockLockedOut": "Zu viele Versuche. Bitte warte einen Moment und versuch es dann erneut.",
+  "lockFailed": "Entsperren hat nicht geklappt.",
+  "settingsTitle": "Einstellungen",
+  "settingsSectionAppearance": "Darstellung",
+  "settingsTheme": "Design",
+  "themeSystem": "System",
+  "themeLight": "Hell",
+  "themeDark": "Dunkel",
+  "settingsSectionPrivacy": "Privatsphäre",
+  "settingsLock": "Sperre mit Biometrie",
+  "settingsLockSubtitle": "Fingerabdruck, Gesicht oder Displaysperre beim Öffnen. Solange die Sperre an ist, sind Screenshots und Bildschirmübertragung blockiert.",
+  "settingsLockUnavailable": "Richte zuerst eine Displaysperre auf deinem Gerät ein.",
+  "settingsLockTimeout": "Sperren nach",
+  "lockTimeoutImmediately": "Sofort",
+  "lockTimeoutMinutes": "{count, plural, =1{1 Minute im Hintergrund} other{{count} Minuten im Hintergrund}}",
+  "@lockTimeoutMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSectionTags": "Stimmungen",
+  "settingsManageTags": "Stimmungen verwalten",
+  "settingsSectionWidget": "Widget",
+  "settingsWidgetText": "Textvorschau im Widget",
+  "settingsWidgetTextSubtitle": "Zeigt den Anfang der Notiz auf dem Startbildschirm – sichtbar für alle, die dein Handy sehen.",
+  "settingsSectionBackup": "Sicherung",
+  "settingsBackupDrive": "Sicherung in Google Drive",
+  "settingsBackupOff": "Aus – deine Notizen sind nur auf diesem Gerät",
+  "settingsBackupUnavailable": "In dieser Version nicht verfügbar",
+  "settingsBackupNeedsSetup": "Verbunden – Backup-Passwort festlegen",
+  "settingsBackupNeedsUnlock": "Sicherung gefunden – zum Entsperren tippen",
+  "settingsBackupRestorePending": "Pausiert – Sicherung noch nicht übernommen",
+  "settingsBackupNever": "Verschlüsselt eingeschaltet – noch keine Sicherung",
+  "settingsBackupLast": "Zuletzt gesichert: {when}",
+  "@settingsBackupLast": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsBackupRunning": "Wird gesichert …",
+  "backupTitle": "Sicherung in Google Drive",
+  "backupIntro": "Randnotiz sichert deine Notizen, Stimmungen, Sammlungen und verkleinerte Fotos in einem versteckten App-Ordner deines Google-Drive-Kontos. Alles wird vorher auf diesem Gerät verschlüsselt: Google sieht nur unlesbare Daten, nicht deine Einträge.",
+  "backupConnect": "Mit Google verbinden",
+  "backupConnectFailed": "Die Verbindung mit Google hat nicht geklappt.",
+  "backupAccount": "Google-Konto",
+  "backupSetupIntro": "Lege ein Backup-Passwort fest. Damit kannst du die Sicherung auf einem neuen Gerät öffnen. Es verlässt dieses Gerät nie und ist nicht dein Google-Passwort.",
+  "backupSetupButton": "Backup-Passwort festlegen",
+  "backupPasswordTitle": "Backup-Passwort",
+  "backupPasswordNewTitle": "Neues Backup-Passwort",
+  "backupPasswordLabel": "Passwort",
+  "backupPasswordRepeat": "Passwort wiederholen",
+  "backupPasswordTooShort": "Mindestens {count} Zeichen",
+  "@backupPasswordTooShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupPasswordMismatch": "Die Passwörter stimmen nicht überein",
+  "backupPasswordHint": "Gut merkbar, aber nicht zu erraten – z. B. ein kurzer Satz. Ohne Passwort und ohne Notfallschlüssel lässt sich die Sicherung von niemandem öffnen, auch nicht von uns.",
+  "backupWorking": "Einen Moment …",
+  "backupEmergencyTitle": "Dein Notfallschlüssel",
+  "backupEmergencyIntro": "Falls du das Backup-Passwort vergisst, öffnet dieser Schlüssel deine Sicherung. Schreib ihn auf und bewahre ihn sicher auf – er wird nur jetzt angezeigt.",
+  "backupEmergencyCopy": "Kopieren",
+  "backupEmergencyCopied": "Notfallschlüssel kopiert",
+  "backupEmergencyConfirm": "Ich habe den Notfallschlüssel sicher notiert",
+  "backupEmergencyDone": "Fertig",
+  "backupUnlockIntro": "Auf deinem Google-Konto liegt eine verschlüsselte Sicherung. Gib das Backup-Passwort oder den Notfallschlüssel ein, um sie auf diesem Gerät zu öffnen.",
+  "backupUnlockFoundAt": "Letzte Sicherung: {when}",
+  "@backupUnlockFoundAt": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "backupUnlockLabel": "Passwort oder Notfallschlüssel",
+  "backupUnlockButton": "Entsperren",
+  "backupUnlockWrong": "Das passt nicht. Prüfe Passwort bzw. Notfallschlüssel.",
+  "backupRestoreAskTitle": "Notizen wiederherstellen?",
+  "backupRestoreAskBody": "Die Einträge aus der Sicherung werden zu diesem Gerät hinzugefügt. Was hier neuer ist, bleibt unverändert.",
+  "backupRestoreLater": "Später",
+  "backupRestore": "Wiederherstellen",
+  "backupRestoreDone": "{added, plural, =0{Keine neuen Einträge} =1{1 Eintrag wiederhergestellt} other{{added} Einträge wiederhergestellt}}",
+  "@backupRestoreDone": {
+    "placeholders": {
+      "added": {
+        "type": "int"
+      }
+    }
+  },
+  "backupRestoreUpdated": "{count, plural, =1{1 Eintrag aktualisiert} other{{count} Einträge aktualisiert}}",
+  "@backupRestoreUpdated": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupNow": "Jetzt sichern",
+  "backupDone": "Gesichert",
+  "backupUnchanged": "Schon aktuell – nichts zu sichern",
+  "backupStatusNever": "Noch keine Sicherung.",
+  "backupStatusLast": "Zuletzt gesichert: {when}",
+  "@backupStatusLast": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "backupStatusCounts": "{notes, plural, =1{1 Eintrag} other{{notes} Einträge}} · {photos, plural, =1{1 Bild} other{{photos} Bilder}}",
+  "@backupStatusCounts": {
+    "placeholders": {
+      "notes": {
+        "type": "int"
+      },
+      "photos": {
+        "type": "int"
+      }
+    }
+  },
+  "backupStatusAuto": "Gesichert wird automatisch einmal am Tag, wenn du die App öffnest.",
+  "backupStatusPending": "Sicherung noch nicht übernommen",
+  "backupStatusPendingHint": "Die automatische Sicherung pausiert, bis die Einträge aus deiner Sicherung auch auf diesem Gerät sind – damit nichts überschrieben wird. „Wiederherstellen“ oder „Jetzt sichern“ holt sie hierher.",
+  "backupProblemOffline": "Keine Verbindung zu Google Drive – es wird später erneut versucht.",
+  "backupProblemAuth": "Google hat den Zugriff verweigert. Bitte verbinde dich erneut.",
+  "backupProblemQuota": "Dein Google-Drive-Speicher ist voll.",
+  "backupProblemDamaged": "Die Sicherung in Google Drive ist beschädigt oder gehört zu einem anderen Schlüssel.",
+  "backupProblemUnknown": "Die Sicherung hat nicht geklappt.",
+  "backupReconnect": "Erneut verbinden",
+  "backupChangePassword": "Backup-Passwort ändern",
+  "backupPasswordChanged": "Backup-Passwort geändert",
+  "backupRenewEmergency": "Neuen Notfallschlüssel erstellen",
+  "backupRenewEmergencyAsk": "Der bisherige Notfallschlüssel funktioniert danach nicht mehr.",
+  "backupRenewEmergencyButton": "Neu erstellen",
+  "backupDisconnect": "Abmelden",
+  "backupDisconnectTitle": "Von Google Drive abmelden?",
+  "backupDisconnectBody": "Auf diesem Gerät wird nicht mehr gesichert. Deine Notizen hier bleiben erhalten.",
+  "backupDisconnectDelete": "Auch die Sicherung in Google Drive löschen",
+  "backupPrivacyNote": "Ende-zu-Ende-verschlüsselt (AES-256). Schlüssel: dein Backup-Passwort bzw. der Notfallschlüssel – beide kennt nur du.",
+  "settingsSectionAbout": "Über",
+  "settingsAbout": "Über Randnotiz",
+  "settingsAboutLegalese": "Ein privates Foto-Tagebuch. Deine Notizen bleiben auf deinem Gerät.\n\nKartendaten: Natural Earth (gemeinfrei). Orte: GeoNames (CC BY 4.0). Details unter „Lizenzen“.",
+  "tagManageTitle": "Stimmungen verwalten",
+  "tagDeleteConfirmTitle": "Stimmung „{name}“ löschen?",
+  "@tagDeleteConfirmTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tagDeleteConfirmBody": "{count, plural, =0{Sie wird noch nirgends verwendet.} =1{Sie wird von 1 Notiz entfernt. Die Notiz selbst bleibt erhalten.} other{Sie wird von {count} Notizen entfernt. Die Notizen selbst bleiben erhalten.}}",
+  "@tagDeleteConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagUsage": "{count, plural, =0{Nicht verwendet} =1{1 Notiz} other{{count} Notizen}}",
+  "@tagUsage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagEdit": "Stimmung bearbeiten",
+  "libraryPickExternal": "Google Fotos",
+  "libraryPickExternalTooltip": "Foto aus Google Fotos oder einer anderen Quelle wählen",
+  "libraryImporting": "Foto wird übernommen …",
+  "libraryImportFailed": "Das Foto konnte nicht übernommen werden.",
+  "placeAdd": "Ort",
+  "placeSheetTitle": "Land und Ort",
+  "placeSearchHint": "Ort suchen, z. B. Hamburg",
+  "placeNoResults": "Kein Ort gefunden.",
+  "placePrivacy": "Gespeichert werden nur Land und Ortsname – nie der GPS-Standort deines Fotos. Fotos mit Standort bekommen beides automatisch, ganz ohne Internet. Für das Wetter wird der ungefähre Ort an den Wetterdienst gesendet.",
+  "placeRemove": "Entfernen",
+  "placeWeatherHint": "Mit einem Ort zeigt Randnotiz auch das Wetter an diesem Tag.",
+  "weatherAdjust": "Wetter selbst anpassen",
+  "editorMetaMood": "Stimmung",
+  "navCollections": "Sammlungen",
+  "collectionAddShort": "Sammlung",
+  "collectionPickerTitle": "Sammlungen",
+  "collectionPickerHint": "Sammle Einträge, die zusammengehören – eine Reise, einen Sommer, einen Menschen.",
+  "collectionNew": "Neue Sammlung",
+  "collectionNameLabel": "Name",
+  "collectionNameHint": "z. B. Italien 2024",
+  "collectionRename": "Umbenennen",
+  "collectionDelete": "Sammlung löschen",
+  "collectionDeleteConfirmTitle": "Sammlung löschen?",
+  "collectionDeleteConfirmBody": "„{name}“ wird gelöscht. Die Einträge selbst bleiben im Tagebuch erhalten.",
+  "@collectionDeleteConfirmBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "collectionEntryCount": "{count, plural, =0{Noch leer} =1{1 Eintrag} other{{count} Einträge}}",
+  "@collectionEntryCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "collectionsReorderHint": "Gedrückt halten und ziehen zum Sortieren",
+  "collectionMoveEarlier": "Nach vorne verschieben",
+  "collectionMoveLater": "Nach hinten verschieben",
+  "collectionsEmptyTitle": "Noch keine Sammlungen",
+  "collectionsEmptyBody": "Fasse Einträge zusammen, die zusammengehören – eine Reise, einen Sommer, einen Menschen.",
+  "collectionEmptyBody": "Füge Einträge hinzu – hier oder direkt in einer Notiz über „Sammlung“.",
+  "collectionAddEntries": "Einträge hinzufügen",
+  "collectionAddEntriesNone": "Alle Einträge sind schon in dieser Sammlung.",
+  "collectionAddSelected": "{count, plural, =0{Hinzufügen} =1{1 Eintrag hinzufügen} other{{count} Einträge hinzufügen}}",
+  "@collectionAddSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "collectionRemoveEntry": "Aus der Sammlung entfernen",
+  "collectionNeighboursTitle": "{name} · {position} von {total}",
+  "@collectionNeighboursTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "position": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "collectionPrevious": "Vorheriger",
+  "collectionNext": "Nächster",
+  "collectionStart": "Hier beginnt die Sammlung",
+  "collectionEnd": "Hier endet die Sammlung",
+  "mapEntriesCount": "{count, plural, =1{1 Eintrag} other{{count} Einträge}}",
+  "@mapEntriesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapShowAll": "Alle Einträge zeigen",
+  "mapEmptyTitle": "Noch nichts auf der Karte",
+  "mapEmptyBody": "Länder mit Einträgen werden hier eingefärbt. Fotos mit Standort bekommen ihr Land automatisch, sonst über „Ort“ im Eintrag.",
+  "mapEmptyNoNotes": "Sobald du Notizen schreibst, färben sich hier die Länder, in denen du warst.",
+  "editorTitleHint": "Titel",
+  "editorTitleLabel": "Titel des Eintrags",
+  "emojiPickerTitle": "Emoji wählen",
+  "emojiSearchHint": "Emoji suchen",
+  "emojiNoRecents": "Hier erscheinen die Emojis, die du zuletzt gewählt hast.",
+  "emojiCurrent": "Aktuelles Emoji",
+  "emojiChange": "Emoji ändern",
+  "memoriesSectionOnThisDay": "An diesem Tag",
+  "memoriesSectionAround": "Rund um diesen Tag",
+  "memoriesSectionMore": "Weitere Erinnerungen",
+  "memoriesAnniversaryIn": "{count, plural, =1{Jahrestag morgen} other{Jahrestag in {count} Tagen}}",
+  "@memoriesAnniversaryIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoriesAnniversaryAgo": "{count, plural, =1{Jahrestag war gestern} other{Jahrestag vor {count} Tagen}}",
+  "@memoriesAnniversaryAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoriesOpen": "Eintrag öffnen",
+  "memoriesSwipeHint": "Nach oben wischen für mehr",
+  "journalRemoveFilter": "Filter entfernen",
+  "suggestionsTags": "Stimmungen",
+  "suggestionsPlaces": "Orte",
+  "suggestionsCountries": "Länder",
+  "suggestionsRecent": "Frühere Suchen",
+  "suggestionsClearRecent": "Alle löschen",
+  "suggestionsRemoveRecent": "Aus den früheren Suchen löschen",
+  "geoBackfillProgress": "Orte und Länder werden ergänzt … {done} von {total}",
+  "@geoBackfillProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "mapTitle": "Weltkarte",
+  "mapOpen": "Weltkarte öffnen",
+  "mapShowBorders": "Ländergrenzen zeigen",
+  "mapHideBorders": "Ländergrenzen ausblenden",
+  "mapCountriesCount": "{count, plural, =1{1 Land} other{{count} Länder}}",
+  "@mapCountriesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapNoEntriesIn": "Noch keine Einträge in {country}",
+  "@mapNoEntriesIn": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "countryLabel": "Land",
+  "countryNone": "Kein Land",
+  "countryAdd": "Wählen",
+  "countryChange": "Ändern",
+  "countryRemove": "Land entfernen",
+  "countryPickerTitle": "Land wählen",
+  "countryPickerSearch": "Land suchen (deutsch oder englisch)",
+  "settingsSectionPlaces": "Orte und Länder",
+  "settingsGeoBackfill": "Orte und Länder aus Fotos ergänzen",
+  "settingsGeoBackfillIdle": "Für ältere Einträge: Land und nächster Ort aus dem Fotostandort, offline.",
+  "settingsGeoBackfillDone": "Erledigt – du kannst den Abgleich jederzeit erneut starten.",
+  "settingsGeoBackfillCancelled": "Abgebrochen – tippe, um weiterzumachen.",
+  "settingsGeoBackfillRunning": "{done} von {total} – tippe zum Abbrechen",
+  "@settingsGeoBackfillRunning": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "songAdd": "Lied hinzufügen",
+  "songSheetTitle": "Lied zum Eintrag",
+  "songSearchHint": "Titel oder Künstler suchen",
+  "songNoResults": "Nichts gefunden.",
+  "songSearchSource": "Musik von Spotify",
+  "songRemove": "Lied entfernen",
+  "songChange": "Lied ändern",
+  "songPlay": "Abspielen",
+  "songPause": "Pausieren",
+  "songOpenInSpotify": "In Spotify öffnen",
+  "songRecordLabel": "Lied: {title} von {artist}",
+  "@songRecordLabel": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "songOf": "{title} · {artist}",
+  "@songOf": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "songErrorNotInstalled": "Dafür braucht es die Spotify-App auf diesem Gerät.",
+  "songErrorNotLoggedIn": "Bitte melde dich zuerst in der Spotify-App an.",
+  "songErrorNotAuthorized": "Spotify hat den Zugriff nicht erlaubt.",
+  "songErrorCancelled": "Anmeldung bei Spotify abgebrochen.",
+  "songErrorNetwork": "Keine Verbindung zu Spotify.",
+  "songErrorPlayback": "Spotify konnte das Lied gerade nicht abspielen.",
+  "journalHasSong": "Mit Lied",
+  "songErrorSearch": "Die Suche bei Spotify hat nicht geklappt.",
+  "songErrorForbidden": "Spotify lässt die Suche nicht zu. Ist dein Spotify-Konto im Developer Dashboard unter „User Management“ eingetragen?",
+  "songErrorRateLimit": "Spotify bremst gerade. Bitte gleich noch einmal versuchen.",
+  "introSkip": "Überspringen",
+  "introNext": "Weiter",
+  "introPageLabel": "Seite {page} von {count}",
+  "@introPageLabel": {
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "introPrivateCaption": "nur für dich",
+  "introPrivateTitle": "Deine Gedanken gehören nur dir.",
+  "introPrivateBody": "Randnotiz ist ein stilles Erinnerungsbuch zu deinen Fotos. Was du schreibst, liegt auf diesem Gerät – ohne Konto, ohne Server von uns, ohne Werbung und ohne Tracking.",
+  "introLockCaption": "gut verschlossen",
+  "introLockTitle": "Dein Tagebuch ist verschlossen.",
+  "introLockBody": "Hat dein Gerät eine Displaysperre, öffnet sich Randnotiz nur mit Fingerabdruck, Gesicht oder PIN – das ist von Anfang an so eingestellt. Solange die Sperre an ist, gibt es keine Screenshots und keine Vorschau in der App-Übersicht.",
+  "introLockDebug": "In dieser Entwicklungsversion sind Screenshots trotzdem möglich.",
+  "introLockWidget": "Legst du das Widget auf den Startbildschirm, zeigt es dort ein Foto aus deinem Tagebuch – auch wenn die App gesperrt ist.",
+  "introBackupCaption": "sicher verwahrt",
+  "introBackupTitle": "Eine Sicherung nur für dich.",
+  "introBackupBody": "Wenn du möchtest, sichert Randnotiz deine Einträge im versteckten App-Ordner deines eigenen Google Drive – vorher auf diesem Gerät Ende-zu-Ende-verschlüsselt. Den Schlüssel hast nur du: dein Backup-Passwort und den Notfallschlüssel. Ohne Passwort und ohne Notfallschlüssel kann niemand die Sicherung öffnen – auch nicht Google oder wir, die Entwickler. Bewahre beides gut auf.",
+  "introOnlineTitle": "Wann Randnotiz ins Internet geht",
+  "introOnlineBody": "Wetter und Ortssuche fragen Open-Meteo – mit einer auf etwa 1 km gerundeten Position bzw. deinem Suchbegriff. Beim Diktieren hört je nach Gerät die Spracherkennung von Google zu; wer das nicht möchte, tippt einfach. Wenn du ein Lied verknüpfst, wird bei Spotify gesucht. Was du tippst, und deine Fotos verlassen das Gerät nur verschlüsselt – in deiner Sicherung.",
+  "introSetUpBackup": "Sicherung einrichten",
+  "introHaveBackup": "Ich habe schon eine Sicherung",
+  "introLater": "Später",
+  "introStart": "Los geht’s",
+  "introBackupUnavailable": "In dieser Version ist die Sicherung nicht verfügbar.",
+  "settingsIntro": "Einführung ansehen",
+  "settingsIntroSubtitle": "Was Randnotiz mit deinen Daten macht",
+  "backupRestoreGuide": "Du hast schon eine Sicherung? Verbinde dasselbe Google-Konto wie auf deinem bisherigen Gerät. Danach gibst du dein Backup-Passwort oder den Notfallschlüssel ein und holst deine Einträge zurück.",
+  "backupRestoreNoBackup": "In diesem Google-Konto liegt keine Sicherung von Randnotiz. Liegt sie in einem anderen Konto, melde dich ab und verbinde das richtige.",
+  "backupDevBanner": "Test-App – teilt die Sicherung mit der echten App. Was du hier einrichtest, sicherst oder löschst, betrifft dieselbe Sicherung in Google Drive.",
+  "backupDevConfirmTitle": "Wirklich in der Test-App?",
+  "backupDevConfirmAuto": "Danach sichert die Test-App automatisch in denselben Drive-Ordner wie die echte App – Testeinträge landen dann auch in deren Sicherung.",
+  "backupDevConfirmDelete": "Das löscht auch die Sicherung der echten App, denn beide nutzen denselben Drive-Ordner. Das lässt sich nicht rückgängig machen.",
+  "backupDevConfirmContinue": "Trotzdem fortfahren",
+  "backupDevConfirmDeleteButton": "Trotzdem löschen"
+}
