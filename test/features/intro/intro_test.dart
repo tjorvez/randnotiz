@@ -45,7 +45,6 @@ class FakeAuthenticator implements Authenticator {
 }
 
 const introTitle = 'Deine Gedanken gehören nur dir.';
-const libraryText = 'Bibliothek (Test)';
 const journalText = 'Tagebuch (Test)';
 const lockTitle = 'Randnotiz ist gesperrt';
 
@@ -53,22 +52,18 @@ const lockTitle = 'Randnotiz ist gesperrt';
 /// settings routes (settings, backup, introduction) and stand-ins for the
 /// tabs.
 GoRouter testRouter() => GoRouter(
-  initialLocation: '/library',
+  initialLocation: '/journal',
   routes: [
     GoRoute(
-      path: '/library',
+      path: '/journal',
       builder: (context, _) => Scaffold(
         body: Center(
           child: TextButton(
             onPressed: () => context.push('/settings'),
-            child: const Text(libraryText),
+            child: const Text(journalText),
           ),
         ),
       ),
-    ),
-    GoRoute(
-      path: '/journal',
-      builder: (_, _) => const Scaffold(body: Center(child: Text(journalText))),
     ),
     settingsRoute(),
   ],
@@ -187,7 +182,7 @@ void main() {
   ) async {
     final prefs = await start(tester);
     expect(find.text(introTitle), findsOneWidget);
-    expect(find.text(libraryText), findsNothing, reason: 'app hidden');
+    expect(find.text(journalText), findsNothing, reason: 'app hidden');
     expect(find.text(lockTitle), findsNothing);
     expect(auth.calls, 0, reason: 'no biometric prompt behind the intro');
     expect(seen(prefs), isNull, reason: 'not finished yet');
@@ -197,7 +192,7 @@ void main() {
     await addNote();
     final prefs = await start(tester);
     expect(find.text(introTitle), findsNothing);
-    expect(find.text(libraryText), findsOneWidget);
+    expect(find.text(journalText), findsOneWidget);
     expect(seen(prefs), isTrue);
 
     // Even if the diary is emptied later, the intro stays away.
@@ -213,13 +208,13 @@ void main() {
     await tester.tap(find.text('Überspringen'));
     await tester.pumpAndSettle();
     expect(find.text(introTitle), findsNothing);
-    expect(find.text(libraryText), findsOneWidget);
+    expect(find.text(journalText), findsOneWidget);
     expect(seen(prefs), isTrue);
 
     final again = await start(tester);
     expect(seen(again), isTrue);
     expect(find.text(introTitle), findsNothing);
-    expect(find.text(libraryText), findsOneWidget);
+    expect(find.text(journalText), findsOneWidget);
   });
 
   testWidgets('swipe and "Weiter" move through three pages', (tester) async {
@@ -240,7 +235,7 @@ void main() {
     expect(find.text('Sicherung einrichten'), findsOneWidget);
   });
 
-  testWidgets('"Später" leads to the library – and the lock still applies', (
+  testWidgets('"Später" leads to the journal – and the lock still applies', (
     tester,
   ) async {
     auth = FakeAuthenticator(result: AuthResult.canceled);
@@ -251,17 +246,17 @@ void main() {
     expect(find.text(introTitle), findsNothing);
     // The intro did not unlock anything: the lock screen comes now.
     expect(find.text(lockTitle), findsOneWidget);
-    expect(find.text(libraryText), findsNothing);
+    expect(find.text(journalText), findsNothing);
     expect(auth.calls, 1);
   });
 
-  testWidgets('"Später" with the lock off/unlocked shows the library', (
+  testWidgets('"Später" with the lock off/unlocked shows the journal', (
     tester,
   ) async {
     await start(tester);
     await toLastPage(tester);
     await tapAction(tester, 'Später');
-    expect(find.text(libraryText), findsOneWidget);
+    expect(find.text(journalText), findsOneWidget);
   });
 
   testWidgets('"Sicherung einrichten" opens backup, back leads to library', (
@@ -277,7 +272,7 @@ void main() {
 
     await tester.tap(find.byType(BackButton));
     await tester.pumpAndSettle();
-    expect(find.text(libraryText), findsOneWidget);
+    expect(find.text(journalText), findsOneWidget);
   });
 
   testWidgets('"Ich habe schon eine Sicherung": connect, unlock, restore, '
@@ -336,7 +331,7 @@ void main() {
     await addNote();
     final prefs = await start(tester);
     expect(seen(prefs), isTrue);
-    await tester.tap(find.text(libraryText));
+    await tester.tap(find.text(journalText));
     await tester.pumpAndSettle();
     await tester.scrollUntilVisible(find.text('Einführung ansehen'), 200);
     await tester.tap(find.text('Einführung ansehen'));
@@ -368,7 +363,7 @@ void main() {
     await addNote();
     final prefs = await start(tester);
     await prefs.remove(IntroController.preferenceKey);
-    await tester.tap(find.text(libraryText));
+    await tester.tap(find.text(journalText));
     await tester.pumpAndSettle();
     await tester.scrollUntilVisible(find.text('Einführung ansehen'), 200);
     await tester.tap(find.text('Einführung ansehen'));
@@ -385,7 +380,7 @@ void main() {
     expect(find.text('Sicherung einrichten'), findsNothing);
     expect(find.text('Ich habe schon eine Sicherung'), findsNothing);
     await tapAction(tester, 'Los geht’s');
-    expect(find.text(libraryText), findsOneWidget);
+    expect(find.text(journalText), findsOneWidget);
   });
 
   testWidgets('"reduce motion": "Weiter" jumps without animation', (
@@ -417,7 +412,7 @@ void main() {
       expect(tester.takeException(), isNull);
       // Everything on the last page can be reached by scrolling.
       await tapAction(tester, 'Später');
-      expect(find.text(libraryText), findsOneWidget);
+      expect(find.text(journalText), findsOneWidget);
     });
   }
 }

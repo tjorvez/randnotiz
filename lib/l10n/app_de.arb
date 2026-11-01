@@ -1,7 +1,6 @@
 {
   "@@locale": "de",
   "appTitle": "Randnotiz",
-  "navLibrary": "Bibliothek",
   "navJournal": "Tagebuch",
   "navMemories": "Erinnerungen",
   "settingsTooltip": "Einstellungen",
@@ -13,23 +12,6 @@
   "ok": "OK",
   "openSystemSettings": "Einstellungen öffnen",
   "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal.",
-  "libraryPermissionTitle": "Deine Fotos, dein Tagebuch",
-  "libraryPermissionBody": "Randnotiz zeigt die Fotos deiner Galerie, damit du zu jedem eine Notiz schreiben kannst. Die Fotos bleiben auf deinem Gerät und werden nirgendwohin hochgeladen.",
-  "libraryPermissionButton": "Zugriff erlauben",
-  "libraryPermissionDeniedBody": "Ohne Zugriff auf deine Fotos kann Randnotiz nichts anzeigen. Du kannst ihn jederzeit in den Einstellungen deines Handys erlauben.",
-  "libraryLimitedBanner": "Randnotiz sieht nur die Fotos, die du ausgewählt hast.",
-  "libraryLimitedPickMore": "Auswahl ändern",
-  "libraryLimitedAllowAll": "Alle erlauben",
-  "libraryEmpty": "In deiner Galerie sind noch keine Fotos.",
-  "libraryHasNote": "Hat eine Notiz",
-  "libraryPhotoOf": "Foto vom {date}",
-  "@libraryPhotoOf": {
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
-  },
   "editorTitleNew": "Neue Notiz",
   "editorTitleEdit": "Notiz",
   "editorHint": "Was war da los? Schreib es auf …",
@@ -102,7 +84,7 @@
   "dictationUnknown": "Das Diktat wurde unterbrochen. Dein Text ist erhalten.",
   "journalSearchHint": "Notizen durchsuchen",
   "journalEmptyTitle": "Dein Tagebuch ist noch leer",
-  "journalEmptyBody": "Tippe in der Bibliothek auf ein Foto und schreib deine erste Randnotiz.",
+  "journalEmptyBody": "Tippe unten auf das Foto-Plus, wähl ein Bild und schreib deine erste Randnotiz.",
   "journalNoResults": "Dazu habe ich nichts gefunden.",
   "journalResultCount": "{count, plural, =1{1 Notiz} other{{count} Notizen}}",
   "@journalResultCount": {
@@ -327,8 +309,7 @@
     }
   },
   "tagEdit": "Stimmung bearbeiten",
-  "libraryPickExternal": "Google Fotos",
-  "libraryPickExternalTooltip": "Foto aus Google Fotos oder einer anderen Quelle wählen",
+  "libraryPickExternalTooltip": "Neuer Eintrag: Foto auswählen",
   "libraryImporting": "Foto wird übernommen …",
   "libraryImportFailed": "Das Foto konnte nicht übernommen werden.",
   "placeAdd": "Ort",

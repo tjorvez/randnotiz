@@ -13,15 +13,13 @@ import 'tab_transitions.dart';
 /// Space the tab contents keep free at the bottom for the floating pill.
 const double floatingNavClearance = 96;
 
-/// Index of the library tab (the pill grows a "Google Fotos" button there).
-const int libraryTab = 0;
-
 /// Index of the journal tab (its app bar opens the world map).
-const int journalTab = 1;
+const int journalTab = 0;
 
-/// The four tabs (Bibliothek, Tagebuch, Sammlungen, Erinnerungen) with a
-/// shared app bar (seasonal motif, settings; the journal also opens the
-/// world map) and a floating pill as navigation.
+/// The three tabs (Tagebuch, Sammlungen, Erinnerungen) with a shared app
+/// bar (seasonal motif, settings; the journal also opens the world map) and
+/// a floating pill as navigation. The pill always carries the photo button
+/// that starts a new entry from the system photo picker.
 class HomeShell extends ConsumerWidget {
   const HomeShell({super.key, required this.shell});
 
@@ -31,15 +29,9 @@ class HomeShell extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final season = Season.of(ref.watch(clockProvider)());
-    final titles = [
-      l10n.navLibrary,
-      l10n.navJournal,
-      l10n.navCollections,
-      l10n.navMemories,
-    ];
+    final titles = [l10n.navJournal, l10n.navCollections, l10n.navMemories];
 
     final items = <(IconData, IconData, String)>[
-      (Icons.photo_library_outlined, Icons.photo_library, l10n.navLibrary),
       (Icons.menu_book_outlined, Icons.menu_book, l10n.navJournal),
       (
         Icons.collections_bookmark_outlined,
@@ -119,7 +111,6 @@ class _FloatingControls extends StatelessWidget {
                 onSelected: (i) =>
                     shell.goBranch(i, initialLocation: i == shell.currentIndex),
                 items: items,
-                showPhotoAction: shell.currentIndex == libraryTab,
               ),
             ),
           ),
@@ -131,20 +122,18 @@ class _FloatingControls extends StatelessWidget {
 
 /// Minimal floating navigation: icons only, in a soft rounded pill. The
 /// highlight glides to the chosen tab; icons change colour, size and form
-/// (outlined → filled) smoothly. On the library tab the pill grows to the
-/// right and reveals the "Google Fotos" button behind a thin divider.
+/// (outlined → filled) smoothly. Behind a thin divider on the right sits the
+/// photo button for a new entry.
 class _NavPill extends StatelessWidget {
   const _NavPill({
     required this.selected,
     required this.onSelected,
     required this.items,
-    required this.showPhotoAction,
   });
 
   final int selected;
   final ValueChanged<int> onSelected;
   final List<(IconData, IconData, String)> items;
-  final bool showPhotoAction;
 
   static const double itemWidth = 50;
   static const double itemHeight = 44;
@@ -165,32 +154,12 @@ class _NavPill extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(5),
-        child: TweenAnimationBuilder<double>(
-          tween: Tween(end: showPhotoAction ? 1 : 0),
-          duration: duration,
-          curve: tabSwitchCurve,
-          builder: (context, t, tabs) => Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              tabs!,
-              // Collapsed: not in the tree at all (no focus, no semantics).
-              if (t > 0)
-                ClipRect(
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    widthFactor: t,
-                    child: IgnorePointer(
-                      ignoring: !showPhotoAction,
-                      child: Opacity(
-                        opacity: t,
-                        child: _PhotoActionSlot(scheme: scheme),
-                      ),
-                    ),
-                  ),
-                ),
-            ],
-          ),
-          child: _tabs(scheme, duration),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _tabs(scheme, duration),
+            _PhotoActionSlot(scheme: scheme),
+          ],
         ),
       ),
     );
@@ -233,7 +202,7 @@ class _NavPill extends StatelessWidget {
   );
 }
 
-/// Divider plus the "Google Fotos" button, sized like a tab item.
+/// Divider plus the photo button, sized like a tab item.
 class _PhotoActionSlot extends StatelessWidget {
   const _PhotoActionSlot({required this.scheme});
 

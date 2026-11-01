@@ -100,12 +100,6 @@ abstract class AppLocalizations {
   /// **'Randnotiz'**
   String get appTitle;
 
-  /// No description provided for @navLibrary.
-  ///
-  /// In de, this message translates to:
-  /// **'Bibliothek'**
-  String get navLibrary;
-
   /// No description provided for @navJournal.
   ///
   /// In de, this message translates to:
@@ -171,66 +165,6 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Etwas ist schiefgelaufen. Bitte versuch es noch einmal.'**
   String get errorGeneric;
-
-  /// No description provided for @libraryPermissionTitle.
-  ///
-  /// In de, this message translates to:
-  /// **'Deine Fotos, dein Tagebuch'**
-  String get libraryPermissionTitle;
-
-  /// No description provided for @libraryPermissionBody.
-  ///
-  /// In de, this message translates to:
-  /// **'Randnotiz zeigt die Fotos deiner Galerie, damit du zu jedem eine Notiz schreiben kannst. Die Fotos bleiben auf deinem Gerät und werden nirgendwohin hochgeladen.'**
-  String get libraryPermissionBody;
-
-  /// No description provided for @libraryPermissionButton.
-  ///
-  /// In de, this message translates to:
-  /// **'Zugriff erlauben'**
-  String get libraryPermissionButton;
-
-  /// No description provided for @libraryPermissionDeniedBody.
-  ///
-  /// In de, this message translates to:
-  /// **'Ohne Zugriff auf deine Fotos kann Randnotiz nichts anzeigen. Du kannst ihn jederzeit in den Einstellungen deines Handys erlauben.'**
-  String get libraryPermissionDeniedBody;
-
-  /// No description provided for @libraryLimitedBanner.
-  ///
-  /// In de, this message translates to:
-  /// **'Randnotiz sieht nur die Fotos, die du ausgewählt hast.'**
-  String get libraryLimitedBanner;
-
-  /// No description provided for @libraryLimitedPickMore.
-  ///
-  /// In de, this message translates to:
-  /// **'Auswahl ändern'**
-  String get libraryLimitedPickMore;
-
-  /// No description provided for @libraryLimitedAllowAll.
-  ///
-  /// In de, this message translates to:
-  /// **'Alle erlauben'**
-  String get libraryLimitedAllowAll;
-
-  /// No description provided for @libraryEmpty.
-  ///
-  /// In de, this message translates to:
-  /// **'In deiner Galerie sind noch keine Fotos.'**
-  String get libraryEmpty;
-
-  /// No description provided for @libraryHasNote.
-  ///
-  /// In de, this message translates to:
-  /// **'Hat eine Notiz'**
-  String get libraryHasNote;
-
-  /// No description provided for @libraryPhotoOf.
-  ///
-  /// In de, this message translates to:
-  /// **'Foto vom {date}'**
-  String libraryPhotoOf(String date);
 
   /// No description provided for @editorTitleNew.
   ///
@@ -535,7 +469,7 @@ abstract class AppLocalizations {
   /// No description provided for @journalEmptyBody.
   ///
   /// In de, this message translates to:
-  /// **'Tippe in der Bibliothek auf ein Foto und schreib deine erste Randnotiz.'**
+  /// **'Tippe unten auf das Foto-Plus, wähl ein Bild und schreib deine erste Randnotiz.'**
   String get journalEmptyBody;
 
   /// No description provided for @journalNoResults.
@@ -1192,16 +1126,10 @@ abstract class AppLocalizations {
   /// **'Stimmung bearbeiten'**
   String get tagEdit;
 
-  /// No description provided for @libraryPickExternal.
-  ///
-  /// In de, this message translates to:
-  /// **'Google Fotos'**
-  String get libraryPickExternal;
-
   /// No description provided for @libraryPickExternalTooltip.
   ///
   /// In de, this message translates to:
-  /// **'Foto aus Google Fotos oder einer anderen Quelle wählen'**
+  /// **'Neuer Eintrag: Foto auswählen'**
   String get libraryPickExternalTooltip;
 
   /// No description provided for @libraryImporting.

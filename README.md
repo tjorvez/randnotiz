@@ -46,7 +46,7 @@ weitergeben.
 
 | | |
 |---|---|
-| 📷 **Bibliothek** | Alle Fotos der Galerie nach Monaten, ein Stift markiert Fotos mit Notiz. Fotos aus Google Fotos über den System-Foto-Picker. |
+| 📷 **Neuer Eintrag** | Das Foto-Plus in der Navigation öffnet die Fotoauswahl des Systems (inklusive Google Fotos); das Foto wird als private Kopie übernommen. |
 | ✍️ **Notiz** | Handschrift auf liniertem Papier, speichert automatisch. Kopfzeile mit Datum · Ort · Wetter · Stimmungen. Diktat per Mikrofon (Deutsch). |
 | 📖 **Tagebuch** | Einträge als Heftseiten mit Titel. Volltextsuche über Text, Titel, Stimmungen, Ort und Land, mit Vorschlägen und Filtern. |
 | 🌍 **Orte & Länder** | Offline aus dem Fotostandort bestimmt, von Hand änderbar. Eine Weltkarte färbt die Länder ein, in denen du warst. |
@@ -358,7 +358,7 @@ lib/
     widgets/                 Papier, Polaroid, Washi-Tape, Logo, gemeinsame Bausteine
     platform/                FLAG_SECURE-Kanal, App-Version, Erkennung der Test-App
   features/                  feature-first, je domain/ data/ presentation/
-    library/                 Galerie (photo_manager), Import aus dem Foto-Picker
+    library/                 Foto-Zugriff: Import aus dem Foto-Picker, Galerie-Fotos alter Einträge (photo_manager)
     notes/                   Notizen, Editor, Orts-Panel, Miniaturbilder
     tags/                    Stimmungen (Emoji + Name)
     journal/  memories/      Tagebuch mit Suche/Vorschlägen, Erinnerungs-Slider

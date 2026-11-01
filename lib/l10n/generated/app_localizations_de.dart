@@ -13,9 +13,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get appTitle => 'Randnotiz';
 
   @override
-  String get navLibrary => 'Bibliothek';
-
-  @override
   String get navJournal => 'Tagebuch';
 
   @override
@@ -48,41 +45,6 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get errorGeneric =>
       'Etwas ist schiefgelaufen. Bitte versuch es noch einmal.';
-
-  @override
-  String get libraryPermissionTitle => 'Deine Fotos, dein Tagebuch';
-
-  @override
-  String get libraryPermissionBody =>
-      'Randnotiz zeigt die Fotos deiner Galerie, damit du zu jedem eine Notiz schreiben kannst. Die Fotos bleiben auf deinem Gerät und werden nirgendwohin hochgeladen.';
-
-  @override
-  String get libraryPermissionButton => 'Zugriff erlauben';
-
-  @override
-  String get libraryPermissionDeniedBody =>
-      'Ohne Zugriff auf deine Fotos kann Randnotiz nichts anzeigen. Du kannst ihn jederzeit in den Einstellungen deines Handys erlauben.';
-
-  @override
-  String get libraryLimitedBanner =>
-      'Randnotiz sieht nur die Fotos, die du ausgewählt hast.';
-
-  @override
-  String get libraryLimitedPickMore => 'Auswahl ändern';
-
-  @override
-  String get libraryLimitedAllowAll => 'Alle erlauben';
-
-  @override
-  String get libraryEmpty => 'In deiner Galerie sind noch keine Fotos.';
-
-  @override
-  String get libraryHasNote => 'Hat eine Notiz';
-
-  @override
-  String libraryPhotoOf(String date) {
-    return 'Foto vom $date';
-  }
 
   @override
   String get editorTitleNew => 'Neue Notiz';
@@ -267,7 +229,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get journalEmptyBody =>
-      'Tippe in der Bibliothek auf ein Foto und schreib deine erste Randnotiz.';
+      'Tippe unten auf das Foto-Plus, wähl ein Bild und schreib deine erste Randnotiz.';
 
   @override
   String get journalNoResults => 'Dazu habe ich nichts gefunden.';
@@ -736,11 +698,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tagEdit => 'Stimmung bearbeiten';
 
   @override
-  String get libraryPickExternal => 'Google Fotos';
-
-  @override
-  String get libraryPickExternalTooltip =>
-      'Foto aus Google Fotos oder einer anderen Quelle wählen';
+  String get libraryPickExternalTooltip => 'Neuer Eintrag: Foto auswählen';
 
   @override
   String get libraryImporting => 'Foto wird übernommen …';

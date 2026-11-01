@@ -7,10 +7,10 @@ import 'package:go_router/go_router.dart';
 import '../../../app/providers.dart';
 import '../../../l10n/generated/app_localizations.dart';
 
-/// "Google Fotos": an icon button for the navigation pill (it fills the
-/// slot the pill gives it). Opens the system photo picker (which includes Google
-/// Photos if it is set as cloud media app), imports the chosen photo as a
-/// private copy and opens the editor for it.
+/// The photo plus in the navigation pill – the way to a new entry (it fills
+/// the slot the pill gives it). Opens the system photo picker (which includes
+/// Google Photos if it is set as cloud media app), imports the chosen photo
+/// as a private copy and opens the editor for it.
 class PickExternalPhotoButton extends ConsumerStatefulWidget {
   const PickExternalPhotoButton({super.key});
 

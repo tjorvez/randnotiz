@@ -10,7 +10,6 @@ import '../features/collections/presentation/collections_screen.dart';
 import '../features/intro/presentation/intro_controller.dart';
 import '../features/intro/presentation/intro_screen.dart';
 import '../features/journal/presentation/journal_screen.dart';
-import '../features/library/presentation/library_screen.dart';
 import '../features/map/presentation/map_screen.dart';
 import '../features/memories/presentation/memories_screen.dart';
 import '../features/notes/presentation/note_editor_screen.dart';
@@ -23,21 +22,13 @@ import 'tab_transitions.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final router = GoRouter(
-    initialLocation: '/library',
+    initialLocation: '/journal',
     routes: [
       StatefulShellRoute(
         builder: (context, state, shell) =>
             CoveredPageInsets(child: HomeShell(shell: shell)),
         navigatorContainerBuilder: _branchStack,
         branches: [
-          StatefulShellBranch(
-            routes: [
-              GoRoute(
-                path: '/library',
-                builder: (_, _) => const LibraryScreen(),
-              ),
-            ],
-          ),
           StatefulShellBranch(
             routes: [
               GoRoute(
@@ -138,18 +129,18 @@ GoRoute settingsRoute() => GoRoute(
 );
 
 /// Where an introduction action leads: the backup screen (with the restore
-/// path first for [IntroAction.restoreBackup]), or null for the library.
+/// path first for [IntroAction.restoreBackup]), or null for the journal.
 String? backupLocationAfterIntro(IntroAction action) => switch (action) {
   IntroAction.setUpBackup => '/settings/backup?from=intro',
   IntroAction.restoreBackup => '/settings/backup?from=intro&restore=1',
   IntroAction.later => null,
 };
 
-/// After the first-start introduction: the library, with the backup screen
+/// After the first-start introduction: the journal, with the backup screen
 /// on top if one of the backup actions was chosen – going back from it
-/// leads to the library.
+/// leads to the journal.
 void startAfterIntro(GoRouter router, IntroAction action) {
-  router.go('/library');
+  router.go('/journal');
   final backup = backupLocationAfterIntro(action);
   if (backup != null) unawaited(router.push(backup));
 }
