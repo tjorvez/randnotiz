@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Native texts (launcher, widget), English as the default. The Flutter UI
+     texts live in lib/l10n/app_*.arb; the widget's title and empty text come
+     from the app (in its language) once it has synced. -->
+<resources>
+    <string name="app_name" translatable="false">Randnotiz</string>
+    <string name="widget_name">Memory of the day</string>
+    <string name="widget_description">A photo from your diary that has its anniversary today.</string>
+    <string name="widget_title">Memory of the day</string>
+    <string name="widget_empty">No memory yet today – open Randnotiz.</string>
+    <string name="widget_photo_description">Photo of the memory</string>
+</resources>

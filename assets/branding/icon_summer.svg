@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Randnotiz – sommer</title>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE6BE"/>
+      <stop offset="1" stop-color="#FFD9C8"/>
+    </linearGradient>
+    <clipPath id="clip"><path d="M300 228 L720 226 L719 606 C719 634 704 650 674 650 L300 650 Z"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" rx="230" fill="#F5ECDC"/>
+  <g transform="translate(-38 12)">
+    <path d="M300 228 L720 226 L719 606 C719 634 704 650 674 650 L300 650 Z" fill="url(#grad)"/>
+    <g clip-path="url(#clip)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M744 351 Q505 195 250 45 Q466 237 698 422 Q436 242 178 79 Q444 311 684 525 Q424 359 186 186 Q388 388 587 556 Q359 377 111 216 Q338 394 523 606" stroke="#FFBC6E" stroke-width="44" opacity="0.9"/>
+      <path d="M698 612 Q640 412 544 181 Q575 418 617 665 Q487 449 398 218 Q419 430 486 687" stroke="#9FD5CC" stroke-width="30" opacity="0.85"/>
+      <path d="M816 313 Q542 439 301 586 Q564 513 837 406 Q576 536 352 669 Q613 582 869 462 Q623 615 348 737 Q614 626 899 523 Q648 672 410 786" stroke="#F58D7C" stroke-width="42" opacity="0.9"/>
+      <path d="M746 235 Q649 223 574 233 Q670 260 775 301 Q675 285 556 289 Q646 347 763 379" stroke="#FFD45E" stroke-width="26" opacity="0.95"/>
+      <path d="M472 601 Q416 549 342 485 Q379 571 430 657 Q358 574 293 518 Q340 613 413 721" stroke="#F2707A" stroke-width="24" opacity="0.9"/>
+    </g>
+    <path d="M727 626 C733 560 720 500 729 430 C737 360 722 320 731 262 C734 232 728 218 708 217 C640 212 600 224 520 219 C440 214 380 226 318 215 C298 212 288 226 290 248 C294 330 283 400 291 470 C298 540 286 590 292 632 C294 652 304 660 324 658 C390 654 450 666 520 659 C586 653 628 700 610 748 C596 790 540 790 552 750 C566 710 640 716 676 752 C704 780 744 780 772 750 C786 734 798 722 812 716" fill="none" stroke="#6E4B36" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

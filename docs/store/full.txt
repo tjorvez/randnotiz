@@ -1,0 +1,39 @@
+Your photos show what happened. Randnotiz keeps what it felt like.
+
+Pick a photo, jot a few lines in the margin, and years later the app brings that exact moment back to you. Randnotiz is a quiet, private photo diary that feels like an old photo album with handwritten notes – no feed, no followers, no pressure.
+
+PRIVATE BY DESIGN
+• No account, no server of ours, no ads, no tracking
+• Your entries stay on your device – stored encrypted, readable only by the app
+• Optional backup to a hidden app folder in your own Google Drive – end-to-end encrypted on your phone first. Only you hold the key; not Google, not us
+• Lock with fingerprint, face or PIN; no screenshots and no preview in the app overview while locked
+• Randnotiz only sees the photos you choose – it never asks for access to your gallery
+
+WRITE DOWN HOW IT FELT
+• Your photo as a Polaroid on lined paper, saved automatically
+• Write in a handwriting-style font or dictate with your voice (English, German, French, Spanish)
+• Add a place, the weather, your mood and a song for the day
+• Add a record to the Polaroid: search a song on Apple Music (no account needed), play a 30-second preview and open it in your music app
+
+YOUR JOURNAL
+• Entries as notebook pages with titles
+• Full-text search across text, titles, moods, places and countries
+• Collections for a trip, a summer or a person – drag to reorder
+• A world map that colours in every country you have visited
+
+MOMENTS COME BACK
+• “A year ago today” – a full-screen slider of your memories, then the days around it
+• Add your birthday and see how much of your life so far you had lived back then
+• Home-screen widget with your memory of the day
+
+MADE WITH CARE
+• Light and dark mode, subtle seasonal accents
+• Available in English, German, French and Spanish
+• Free software (GPL-3.0-or-later), a hobby project made with love for detail
+
+A short introduction on first launch explains privacy, lock and backup.
+
+NETWORK USE (only when a feature needs it)
+Weather and place search ask Open-Meteo (rounded position or your search term, no identifier). Song search asks Apple. Dictation may use Google’s speech recognition, depending on your device. Your entries and photos leave the device only inside your encrypted backup, if you turn it on.
+
+Randnotiz is not affiliated with Apple, Google or Open-Meteo.

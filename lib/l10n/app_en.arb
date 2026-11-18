@@ -1,0 +1,711 @@
+{
+  "@@locale": "en",
+  "appTitle": "Randnotiz",
+  "claim": "Write your own story – instead of just swiping through other people’s.",
+  "@claim": {
+    "description": "The app's claim, shown on the start screen and in the introduction"
+  },
+  "navJournal": "Journal",
+  "navMemories": "Memories",
+  "settingsTooltip": "Settings",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "save": "Save",
+  "create": "Create",
+  "done": "Done",
+  "ok": "OK",
+  "openSystemSettings": "Open settings",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "editorTitleNew": "New note",
+  "editorTitleEdit": "Note",
+  "editorHint": "What was going on? Write it down …",
+  "editorSaveFailed": "Not saved – trying again …",
+  "editorCleared": "Note emptied – it will be deleted when you close it.",
+  "editorUndoClear": "Undo",
+  "editorSaved": "Saved",
+  "editorSaving": "Saving …",
+  "editorDelete": "Delete note",
+  "editorDeleteConfirmTitle": "Delete note?",
+  "editorDeleteConfirmBody": "This note’s text, moods and weather and Randnotiz’s copy of the photo will be removed. The photo in your gallery or in Google Photos stays untouched.",
+  "editorPhotoMissing": "The full-size photo is missing. The saved preview stays in the journal.",
+  "editorDateTooltip": "Change date",
+  "editorEmptyDiscarded": "Empty notes aren’t saved.",
+  "weatherKind": "{kind, select, clear{Sunny} partlyCloudy{Partly cloudy} cloudy{Cloudy} fog{Fog} drizzle{Drizzle} rain{Rain} snow{Snow} thunderstorm{Thunderstorm} other{Weather}}",
+  "@weatherKind": {
+    "description": "Short weather description",
+    "placeholders": {
+      "kind": {
+        "type": "String"
+      }
+    }
+  },
+  "weatherTemperature": "{temperature} °C",
+  "@weatherTemperature": {
+    "placeholders": {
+      "temperature": {
+        "type": "String"
+      }
+    }
+  },
+  "weatherLoading": "Looking up the weather …",
+  "weatherAdd": "Weather",
+  "weatherFetchAgain": "Try again",
+  "weatherOffline": "The weather couldn’t be fetched. Maybe there’s no internet connection right now.",
+  "weatherTemperatureLabel": "Temperature in °C (optional)",
+  "weatherRemove": "Remove weather",
+  "tagsAdd": "Mood",
+  "tagsSheetTitle": "Moods",
+  "tagsCreateNew": "Create a new mood",
+  "tagNameLabel": "Name of the mood",
+  "tagNameHint": "e.g. Happy",
+  "tagDuplicate": "This mood already exists.",
+  "tagNameEmpty": "Please enter a name.",
+  "tagsNone": "No moods yet. Create your first one.",
+  "tagRemove": "Remove mood {name}",
+  "@tagRemove": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "micStart": "Dictate",
+  "micStop": "Stop dictation",
+  "micListening": "Listening …",
+  "micUnavailableTooltip": "Dictation not available",
+  "micRationaleTitle": "Notes by voice",
+  "micRationaleBody": "To dictate your note, Randnotiz needs access to the microphone. Nothing is recorded or stored – only the recognised text ends up in your note. Depending on the device, your phone recognises speech itself or uses Google’s speech recognition service.",
+  "micRationaleContinue": "Continue",
+  "micDenied": "Without microphone access, dictation isn’t possible. You can of course keep typing.",
+  "micPermanentlyDeniedTitle": "Microphone is blocked",
+  "micPermanentlyDeniedBody": "You declined microphone access. If you’d like to dictate, allow it in the app settings.",
+  "micUnavailable": "Speech recognition isn’t available on this device. Turn on e.g. “Speech Services by Google” in the system settings.",
+  "dictationNoSpeech": "I didn’t catch anything. Tap the microphone again.",
+  "dictationNetwork": "Speech recognition needs an internet connection right now.",
+  "dictationBusy": "Speech recognition is busy right now. Try again in a moment.",
+  "dictationLanguage": "This device’s speech recognition doesn’t support English.",
+  "dictationAudio": "The microphone is in use right now, for example by a call. Your text is safe.",
+  "dictationUnknown": "Dictation was interrupted. Your text is safe.",
+  "journalSearchHint": "Search notes",
+  "journalEmptyTitle": "Your journal is still empty",
+  "journalEmptyBody": "Tap the photo with the plus below, pick a picture from your gallery or from Google Photos and write your first note in the margin.",
+  "journalNoResults": "I couldn’t find anything for that.",
+  "journalResultCount": "{count, plural, one{1 note} other{{count} notes}}",
+  "@journalResultCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journalClearFilter": "Reset filters",
+  "journalClearSearch": "Clear search",
+  "yearsAgo": "{count, plural, one{1 year ago} other{{count} years ago}}",
+  "@yearsAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monthsAgo": "{count, plural, one{1 month ago} other{{count} months ago}}",
+  "@monthsAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeksAgo": "{count, plural, one{1 week ago} other{{count} weeks ago}}",
+  "@weeksAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysAgo": "{count, plural, =0{Today} =1{Yesterday} other{{count} days ago}}",
+  "@daysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoriesEmptyTitle": "No memories yet",
+  "memoriesEmptyBody": "Once you write notes, they’ll come back here on their anniversaries.",
+  "lockTitle": "Randnotiz is locked",
+  "lockBody": "Unlock with your fingerprint, face or screen lock.",
+  "lockButton": "Unlock",
+  "lockReason": "Unlock Randnotiz",
+  "lockLockedOut": "Too many attempts. Please wait a moment and try again.",
+  "lockFailed": "Unlocking didn’t work.",
+  "settingsTitle": "Settings",
+  "settingsSectionAppearance": "Appearance",
+  "settingsTheme": "Theme",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "settingsLanguage": "Language",
+  "languageSystem": "Device language",
+  "languageSystemShowing": "Device language ({language})",
+  "@languageSystemShowing": {
+    "description": "Setting 'follow the device'; the placeholder is the language currently shown, in its own name",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsSectionPrivacy": "Privacy",
+  "settingsLock": "Biometric lock",
+  "settingsLockSubtitle": "Fingerprint, face or screen lock when opening. While the lock is on, screenshots and screen casting are blocked.",
+  "settingsLockUnavailable": "Set up a screen lock on your device first.",
+  "settingsLockTimeout": "Lock after",
+  "lockTimeoutImmediately": "Immediately",
+  "lockTimeoutMinutes": "{count, plural, one{1 minute in the background} other{{count} minutes in the background}}",
+  "@lockTimeoutMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSectionTags": "Moods",
+  "settingsManageTags": "Manage moods",
+  "settingsSectionWidget": "Widget",
+  "settingsWidgetText": "Text preview in the widget",
+  "settingsWidgetTextSubtitle": "Shows the beginning of the note on the home screen – visible to anyone who sees your phone.",
+  "settingsSectionMemories": "Memories",
+  "settingsBirthday": "Birthday",
+  "@settingsBirthday": {
+    "description": "Settings: the person's date of birth, only used for lifeShare"
+  },
+  "settingsBirthdayNotSet": "Optional – shows next to memories how much of your life so far you had lived back then. Stays on this device.",
+  "settingsBirthdayRemove": "Remove birthday",
+  "lifeShare": "{percent} of your life",
+  "@lifeShare": {
+    "description": "Next to \"5 years ago\": the share of the life so far that the person had lived on that day (age then / age today). percent is already formatted, e.g. \"50%\" or \"50 %\"",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "lostNotesTitle": "Your notes could not be opened",
+  "lostNotesBody": "The key to your notes is gone from this device – this rarely happens, for example when Android resets its protected storage. Randnotiz has therefore started a new, empty diary. Your photos are still here. If you have a backup in Google Drive, you can bring your entries back with it.",
+  "lostNotesRestore": "Restore backup",
+  "lostNotesLater": "Not now",
+  "lostNotesMeanwhile": "Until you decide, Randnotiz keeps all your photos and pauses automatic backups, so your existing backup is not replaced.",
+  "lostNotesStartOver": "Continue without",
+  "backupLostNotesTitle": "Replace your earlier backup?",
+  "backupLostNotesBody": "Your notes could not be opened recently. If you back up now, the new, almost empty diary will gradually replace your earlier backup. Better restore it first.",
+  "backupLostNotesConfirm": "Back up anyway",
+  "databaseUnavailableTitle": "Your notes can't be opened right now",
+  "databaseUnavailableBody": "Android is not handing out the key to your notes at the moment. Nothing is lost. Try again in a moment, or restart your phone.",
+  "databaseUnavailableRetry": "Try again",
+  "widgetTitle": "Memory of the day",
+  "@widgetTitle": {
+    "description": "Home screen widget: title while there is no memory for today"
+  },
+  "widgetEmpty": "No memory yet today – open Randnotiz.",
+  "settingsSectionBackup": "Backup",
+  "settingsBackupDrive": "Backup in Google Drive",
+  "settingsBackupOff": "Off – your notes are only on this device",
+  "settingsBackupUnavailable": "Not available in this version",
+  "settingsBackupNeedsSetup": "Connected – set a backup password",
+  "settingsBackupNeedsUnlock": "Backup found – tap to unlock",
+  "settingsBackupRestorePending": "Paused – backup not brought over yet",
+  "settingsBackupNever": "Encrypted and on – no backup yet",
+  "settingsBackupLast": "Last backup: {when}",
+  "@settingsBackupLast": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsBackupRunning": "Backing up …",
+  "backupTitle": "Backup in Google Drive",
+  "backupIntro": "Encrypted in your Google Drive – Google only sees unreadable data.",
+  "backupConnect": "Connect with Google",
+  "backupConnectFailed": "Connecting with Google didn’t work.",
+  "backupAccount": "Google account",
+  "backupSetupIntro": "The backup password opens the backup on a new device. It isn’t your Google password.",
+  "backupSetupButton": "Set backup password",
+  "backupPasswordTitle": "Backup password",
+  "backupPasswordNewTitle": "New backup password",
+  "backupPasswordLabel": "Password",
+  "backupPasswordRepeat": "Repeat password",
+  "backupPasswordTooShort": "At least {count} characters",
+  "@backupPasswordTooShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupPasswordMismatch": "The passwords don’t match",
+  "backupPasswordHint": "Easy to remember but hard to guess – e.g. a short sentence. Without the password and the emergency key, nobody can open the backup, not even us.",
+  "backupWorking": "One moment …",
+  "backupEmergencyTitle": "Your emergency key",
+  "backupEmergencyIntro": "If you forget the backup password, this key opens your backup. Write it down and keep it safe – it’s only shown now.",
+  "backupEmergencyCopy": "Copy",
+  "backupEmergencyCopied": "Emergency key copied",
+  "backupEmergencyConfirm": "I’ve written down the emergency key safely",
+  "backupEmergencyDone": "Done",
+  "backupUnlockIntro": "There’s an encrypted backup in your Google account. Enter the backup password or the emergency key to open it on this device.",
+  "backupUnlockFoundAt": "Last backup: {when}",
+  "@backupUnlockFoundAt": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "backupUnlockLabel": "Password or emergency key",
+  "backupUnlockButton": "Unlock",
+  "backupUnlockWrong": "That doesn’t match. Check the password or emergency key.",
+  "backupRestoreAskTitle": "Restore notes?",
+  "backupRestoreAskBody": "The entries from the backup are added to this device. Whatever is newer here stays as it is.",
+  "backupRestoreLater": "Later",
+  "backupRestore": "Restore",
+  "backupRestoreDone": "{added, plural, =0{No new entries} =1{1 entry restored} other{{added} entries restored}}",
+  "@backupRestoreDone": {
+    "placeholders": {
+      "added": {
+        "type": "int"
+      }
+    }
+  },
+  "backupRestoreUpdated": "{count, plural, one{1 entry updated} other{{count} entries updated}}",
+  "@backupRestoreUpdated": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupNow": "Back up now",
+  "backupDone": "Backed up",
+  "backupUnchanged": "Already up to date – nothing to back up",
+  "backupStatusNever": "No backup yet.",
+  "backupStatusLast": "Last backup: {when}",
+  "@backupStatusLast": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "backupStatusCounts": "{notes, plural, one{1 entry} other{{notes} entries}} · {photos, plural, one{1 picture} other{{photos} pictures}}",
+  "@backupStatusCounts": {
+    "placeholders": {
+      "notes": {
+        "type": "int"
+      },
+      "photos": {
+        "type": "int"
+      }
+    }
+  },
+  "backupStatusAuto": "Backups happen automatically once a day when you open the app.",
+  "backupStatusPending": "Backup not brought over yet",
+  "backupStatusPendingHint": "Automatic backups are paused until the entries from your backup are on this device too – so nothing gets overwritten. “Restore” or “Back up now” brings them here.",
+  "backupProblemOffline": "No connection to Google Drive – it will try again later.",
+  "backupProblemAuth": "Google denied access. Please connect again.",
+  "backupProblemQuota": "Your Google Drive storage is full.",
+  "backupProblemDamaged": "The backup in Google Drive is damaged or belongs to a different key.",
+  "backupProblemUnknown": "The backup didn’t work.",
+  "backupReconnect": "Connect again",
+  "backupChangePassword": "Change backup password",
+  "backupPasswordChanged": "Backup password changed",
+  "backupRenewEmergency": "Create a new emergency key",
+  "backupRenewEmergencyAsk": "The current emergency key will stop working.",
+  "backupRenewEmergencyButton": "Create new key",
+  "backupDisconnect": "Sign out",
+  "backupDisconnectTitle": "Sign out of Google Drive?",
+  "backupDisconnectBody": "This device will stop backing up. Your notes here stay as they are.",
+  "backupDisconnectDelete": "Also delete the backup in Google Drive",
+  "settingsSectionAbout": "About",
+  "settingsAbout": "About Randnotiz",
+  "settingsPrivacyPolicy": "Privacy policy",
+  "settingsPrivacyPolicyOpenFailed": "The link couldn’t be opened: {url}",
+  "@settingsPrivacyPolicyOpenFailed": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsAboutLegalese": "A private photo diary. Your notes stay on your device.\n\nPrivacy: {url}\n\n{copyright}. Free software under the GNU General Public License v3 or later, without any warranty. Source code: {source}\n\nMap data: Natural Earth (public domain). Places: GeoNames (CC BY 4.0). Song search, covers and previews: Apple (iTunes Search API). Details under “Licenses”.",
+  "@settingsAboutLegalese": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      },
+      "copyright": {
+        "type": "String"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "tagManageTitle": "Manage moods",
+  "tagDeleteConfirmTitle": "Delete mood “{name}”?",
+  "@tagDeleteConfirmTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tagDeleteConfirmBody": "{count, plural, =0{It isn’t used anywhere yet.} =1{It will be removed from 1 note. The note itself stays.} other{It will be removed from {count} notes. The notes themselves stay.}}",
+  "@tagDeleteConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagUsage": "{count, plural, =0{Not used} =1{1 note} other{{count} notes}}",
+  "@tagUsage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagEdit": "Edit mood",
+  "newEntryTooltip": "New entry – pick a photo",
+  "newEntryImporting": "Bringing in the photo …",
+  "newEntryImportFailed": "The photo couldn’t be brought in.",
+  "placeAdd": "Place",
+  "placeSheetTitle": "Country and place",
+  "placeSearchHint": "Search for a place, e.g. London",
+  "placeNoResults": "No place found.",
+  "placePrivacy": "Only the country and the name of the place are stored. For the weather, the approximate location is sent to the weather service.",
+  "placeRemove": "Remove",
+  "placeWeatherHint": "With a place, Randnotiz also shows the weather on that day.",
+  "weatherAdjust": "Adjust the weather yourself",
+  "editorMetaMood": "Mood",
+  "navCollections": "Collections",
+  "collectionAddShort": "Collection",
+  "collectionPickerTitle": "Collections",
+  "collectionPickerHint": "Gather entries that belong together – a trip, a summer, a person.",
+  "collectionNew": "New collection",
+  "collectionNameLabel": "Name",
+  "collectionNameHint": "e.g. Italy 2024",
+  "collectionRename": "Rename",
+  "collectionDelete": "Delete collection",
+  "collectionDeleteConfirmTitle": "Delete collection?",
+  "collectionDeleteConfirmBody": "“{name}” will be deleted. The entries themselves stay in the journal.",
+  "@collectionDeleteConfirmBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "collectionEntryCount": "{count, plural, =0{Still empty} =1{1 entry} other{{count} entries}}",
+  "@collectionEntryCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "collectionsReorderHint": "Press and hold, then drag to sort",
+  "collectionMoveEarlier": "Move forward",
+  "collectionMoveLater": "Move back",
+  "collectionsEmptyTitle": "No collections yet",
+  "collectionsEmptyBody": "Bundle entries that belong together – a trip, a summer, a person.",
+  "collectionEmptyBody": "Add entries – here or right in a note via “Collection”.",
+  "collectionAddEntries": "Add entries",
+  "collectionAddEntriesNone": "All entries are already in this collection.",
+  "collectionAddSelected": "{count, plural, =0{Add} =1{Add 1 entry} other{Add {count} entries}}",
+  "@collectionAddSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "collectionRemoveEntry": "Remove from the collection",
+  "collectionNeighboursTitle": "{name} · {position} of {total}",
+  "@collectionNeighboursTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "position": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "collectionPrevious": "Previous",
+  "collectionNext": "Next",
+  "collectionStart": "The collection starts here",
+  "collectionEnd": "The collection ends here",
+  "mapEntriesCount": "{count, plural, one{1 entry} other{{count} entries}}",
+  "@mapEntriesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapShowAll": "Show all entries",
+  "mapEmptyTitle": "Nothing on the map yet",
+  "mapEmptyBody": "Countries with entries are coloured in here. An entry gets its country via “Place”.",
+  "mapEmptyNoNotes": "Once you write notes, the countries you’ve been to light up here.",
+  "editorTitleHint": "Title",
+  "editorTitleLabel": "Title of the entry",
+  "emojiPickerTitle": "Choose an emoji",
+  "emojiSearchHint": "Search emoji",
+  "emojiNoRecents": "The emojis you picked last will show up here.",
+  "emojiCurrent": "Current emoji",
+  "emojiChange": "Change emoji",
+  "memoriesSectionOnThisDay": "On this day",
+  "memoriesSectionAround": "Around this day",
+  "memoriesSectionMore": "More memories",
+  "memoriesAnniversaryIn": "{count, plural, one{Anniversary tomorrow} other{Anniversary in {count} days}}",
+  "@memoriesAnniversaryIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoriesAnniversaryAgo": "{count, plural, one{Anniversary was yesterday} other{Anniversary {count} days ago}}",
+  "@memoriesAnniversaryAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoriesOpen": "Open entry",
+  "memoriesSwipeHint": "Swipe up for more",
+  "journalRemoveFilter": "Remove filter",
+  "suggestionsTags": "Moods",
+  "suggestionsPlaces": "Places",
+  "suggestionsCountries": "Countries",
+  "suggestionsRecent": "Recent searches",
+  "suggestionsClearRecent": "Clear all",
+  "suggestionsRemoveRecent": "Remove from recent searches",
+  "geoBackfillProgress": "Adding places and countries … {done} of {total}",
+  "@geoBackfillProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "mapTitle": "World map",
+  "mapOpen": "Open world map",
+  "mapShowBorders": "Show borders",
+  "mapHideBorders": "Hide borders",
+  "mapCountriesCount": "{count, plural, one{1 country} other{{count} countries}}",
+  "@mapCountriesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapNoEntriesIn": "No entries in {country} yet",
+  "@mapNoEntriesIn": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "countryLabel": "Country",
+  "countryNone": "No country",
+  "countryAdd": "Choose",
+  "countryChange": "Change",
+  "countryRemove": "Remove country",
+  "countryPickerTitle": "Choose a country",
+  "countryPickerSearch": "Search for a country",
+  "introSkip": "Skip",
+  "introNext": "Continue",
+  "introPageLabel": "Page {page} of {count}",
+  "@introPageLabel": {
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "introWelcome": "Welcome to Randnotiz",
+  "introWelcomeBody": "A quiet photo diary for the stories behind your pictures.",
+  "introLanguageTitle": "Your language",
+  "introCloudCaption": "only for you",
+  "introCloudTitle": "Your diary stays yours.",
+  "introCloudBody": "What you write stays on this device – no account, no server of ours, no ads and no tracking. If you like, Randnotiz backs up your entries to a hidden app folder in your own Google Drive, end-to-end encrypted on this device first.",
+  "introCloudKeys": "Only you hold the key: your backup password and the emergency key. Without them nobody can open the backup – not Google and not us, the developers. Keep both somewhere safe.",
+  "introCloudQuestion": "Back up to your Google Drive?",
+  "introCloudAfterTour": "You’ll set it up right after a short tour.",
+  "introNoCloud": "Continue without backup",
+  "introOnlineTitle": "When Randnotiz goes online",
+  "introOnlineBody": "Weather and place search ask Open-Meteo – with a position rounded to about 1 km or with your search term. If you search for a song for an entry, the search term goes to Apple. When you dictate, Google’s speech recognition may listen, depending on the device; if you don’t want that, just type. What you type and your photos only leave the device encrypted – in your backup.",
+  "introSetUpBackup": "Set up backup",
+  "introHaveBackup": "I already have a backup",
+  "introBackupUnavailable": "Backup isn’t available in this version.",
+  "introPhotoCaption": "one photo",
+  "introPhotoTitle": "One photo, one story.",
+  "introPhotoBody": "Tap the photo with the plus at the bottom and pick a picture – from your phone or from Google Photos. Randnotiz doesn’t need access to your gallery for that.",
+  "introWriteCaption": "in the margin",
+  "introWriteTitle": "Write down how it felt.",
+  "introWriteBody": "Who was there? What made you laugh? Write or dictate a few lines in the margin – everything saves by itself. Add a place, the weather, your mood or the song of the day if you like.",
+  "introJournalCaption": "your journal",
+  "introJournalTitle": "Page by page, your journal.",
+  "introJournalBody": "Your entries collect like the pages of a notebook. Search for words, places or moods, gather trips into collections and watch your world map fill with colour.",
+  "introMemoriesCaption": "a year ago",
+  "introMemoriesTitle": "Your moments come back.",
+  "introMemoriesBody": "On the anniversary, Randnotiz brings your moment back – in the app and, if you like, as a widget on your home screen.",
+  "introLock": "If your device has a screen lock, Randnotiz opens only with your fingerprint, face or PIN – that’s on from the start. While it’s locked there are no screenshots and no preview in the app overview. The widget still shows a photo from your journal.",
+  "introLockDebug": "In this development version, screenshots are still possible.",
+  "introStart": "Let’s go",
+  "introStartBackup": "Continue to backup",
+  "introStartRestore": "Continue to restore",
+  "introDemoTitle": "Picnic by the lake",
+  "@introDemoTitle": {
+    "description": "Sample entry in the introduction's animations"
+  },
+  "introDemoText": "Mia brought far too many strawberries. We stayed until the sun went down.",
+  "introDemoPlace": "Lake Constance",
+  "introDemoTitle2": "First snow",
+  "introDemoTitle3": "Grandma’s birthday",
+  "introDemoSearch": "lake",
+  "settingsIntro": "View introduction",
+  "settingsIntroSubtitle": "Language, backup and a short tour",
+  "backupRestoreGuide": "Already have a backup? Connect the same Google account as on your previous device. Then enter your backup password or emergency key and bring your entries back.",
+  "backupRestoreNoBackup": "There’s no Randnotiz backup in this Google account. If it’s in a different account, sign out and connect the right one.",
+  "backupDevBanner": "Test app – shares the backup with the real app. Whatever you set up, back up or delete here affects the same backup in Google Drive.",
+  "backupDevConfirmTitle": "Really in the test app?",
+  "backupDevConfirmAuto": "After this, the test app backs up automatically to the same Drive folder as the real app – test entries then end up in its backup too.",
+  "backupDevConfirmDelete": "This also deletes the real app’s backup, because both use the same Drive folder. It can’t be undone.",
+  "backupDevConfirmContinue": "Continue anyway",
+  "backupDevConfirmDeleteButton": "Delete anyway",
+  "songAdd": "Add song",
+  "songSheetTitle": "Song for the entry",
+  "songSearchHint": "Search for a title or artist",
+  "songNoResults": "Nothing found.",
+  "songSearchSource": "Search, covers and previews provided by Apple",
+  "songRemove": "Remove song",
+  "songChange": "Change song",
+  "songPlay": "Play preview",
+  "songPause": "Pause preview",
+  "songChangeHint": "Press and hold to change",
+  "songOpenAppleMusic": "Listen on Apple Music",
+  "songOtherServices": "Other services",
+  "songRecordLabel": "Song: {title} by {artist}",
+  "@songRecordLabel": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "songOf": "{title} · {artist}",
+  "@songOf": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "journalHasSong": "With song",
+  "songErrorNetwork": "No connection to Apple Music.",
+  "songErrorSearch": "The search didn’t work.",
+  "songErrorRateLimit": "Too many requests right now. Please try again in a moment.",
+  "songErrorPlayback": "The preview couldn’t be played right now.",
+  "songErrorNoPreview": "There’s no preview for this song.",
+  "songErrorNotFound": "This song isn’t (or is no longer) available on Apple Music here.",
+  "songErrorOpen": "The link couldn’t be opened.",
+  "calendarOpen": "Open calendar",
+  "calendarTitle": "Calendar",
+  "calendarToday": "Go to today",
+  "calendarPreviousMonth": "Previous month",
+  "calendarNextMonth": "Next month",
+  "calendarYearView": "Show years",
+  "calendarPreviousYear": "Previous year",
+  "calendarNextYear": "Next year",
+  "calendarYearEntries": "{count, plural, =0{No entries this year} =1{1 entry this year} other{{count} entries this year}}",
+  "@calendarYearEntries": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarMonthEntries": "{count, plural, =0{No entries this month} one{1 entry this month} other{{count} entries this month}}",
+  "@calendarMonthEntries": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDayEmpty": "No entries on this day",
+  "calendarDaysAhead": "{count, plural, =1{Tomorrow} other{In {count} days}}",
+  "@calendarDaysAhead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsWhatsNew": "What’s new",
+  "settingsWhatsNewSubtitle": "What changed in recent updates",
+  "whatsNewTitle": "New in Randnotiz {version}",
+  "@whatsNewTitle": {
+    "description": "Title of the dialog after an update. {version} is e.g. 1.2",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "whatsNewVersion": "Version {version}",
+  "@whatsNewVersion": {
+    "description": "Heading per release when the dialog lists several",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "whatsNewDone": "Got it",
+  "whatsNew130EncryptionTitle": "Stored encrypted",
+  "whatsNew130EncryptionBody": "Your notes are now stored encrypted on your device. Only Randnotiz knows the key – it sits in Android's protected storage and never leaves your phone.",
+  "whatsNew130LifeShareTitle": "How much of your life?",
+  "whatsNew130LifeShareBody": "Add your birthday in the settings: memories and the calendar then show how much of your life so far you had already lived back then.",
+  "whatsNew120CalendarTitle": "Calendar",
+  "whatsNew120CalendarBody": "Tap the calendar icon in the journal to see which days you wrote on – month by month, or a whole year at a glance.",
+  "whatsNew120CollectionsTitle": "Collections",
+  "whatsNew120CollectionsBody": "The newest entries now come first – just like in the journal.",
+  "whatsNew120TitlesTitle": "Written by hand",
+  "whatsNew120TitlesBody": "When you switch tabs, the old title is crossed out and the new one written in.",
+  "whatsNew120PolishTitle": "Polish",
+  "whatsNew120PolishBody": "Long notes stay right on the lines, and the menu no longer rides up over the keyboard while you write."
+}

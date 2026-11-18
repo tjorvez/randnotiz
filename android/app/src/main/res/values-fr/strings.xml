@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_name">Souvenir du jour</string>
+    <string name="widget_description">Une photo de ton journal dont c’est l’anniversaire aujourd’hui.</string>
+    <string name="widget_title">Souvenir du jour</string>
+    <string name="widget_empty">Pas encore de souvenir aujourd’hui – ouvre Randnotiz.</string>
+    <string name="widget_photo_description">Photo du souvenir</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_name">Erinnerung des Tages</string>
+    <string name="widget_description">Ein Foto aus deinem Tagebuch, das heute Jahrestag hat.</string>
+    <string name="widget_title">Erinnerung des Tages</string>
+    <string name="widget_empty">Heute noch keine Erinnerung – öffne Randnotiz.</string>
+    <string name="widget_photo_description">Foto der Erinnerung</string>
+</resources>

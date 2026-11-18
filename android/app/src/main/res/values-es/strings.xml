@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_name">Recuerdo del día</string>
+    <string name="widget_description">Una foto de tu diario que cumple años hoy.</string>
+    <string name="widget_title">Recuerdo del día</string>
+    <string name="widget_empty">Aún no hay recuerdo hoy – abre Randnotiz.</string>
+    <string name="widget_photo_description">Foto del recuerdo</string>
+</resources>

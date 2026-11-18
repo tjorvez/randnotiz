@@ -1,0 +1,23 @@
+name: Idea or feature request
+description: Suggest something that would make Randnotiz better.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea! English or German are both fine.
+
+        Randnotiz deliberately stays small, private and offline-first – ideas that need
+        a server, an account or tracking won't fit, but everything else is welcome.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the idea and the moment in which you'd use it.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter to you?
+      description: What problem does it solve, or what would it make nicer?

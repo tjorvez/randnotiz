@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_paper">#FFFBF6EC</color>
+    <color name="widget_frame">#FFFFFDF8</color>
+    <color name="widget_ink">#FF3A2A1F</color>
+    <color name="widget_ink_soft">#FF66503F</color>
+    <!-- "Vor X Jahren": the primary colour of the season (season.dart). -->
+    <color name="widget_accent_spring">#FFA3405F</color>
+    <color name="widget_accent_summer">#FFAF4339</color>
+    <color name="widget_accent_autumn">#FF9A4A2C</color>
+    <color name="widget_accent_winter">#FF46668A</color>
+    <color name="widget_photo_placeholder">#FFEEE3CF</color>
+    <color name="launch_background">#FFFBF6EC</color>
+    <!-- The logo's line on the start screen (values-night: on coffee paper). -->
+    <color name="logo_line">#FF6E4B36</color>
+    <!-- The tile of the launcher icon (assets/branding/icon_*.svg). -->
+    <color name="ic_launcher_background">#FFF5ECDC</color>
+</resources>
